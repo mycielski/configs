@@ -108,7 +108,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias batlv="cat /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:2f/PNP0C09:00/PNP0C0A:00/power_supply/BAT0/capacity"
 #alias hibernate="systemctl hibernate"
-alias monkeytype="brave monkeytype.com"
+alias monkeytype="brave monkeytype.com & clear"
 alias s3="systemctl suspend"
 alias s4="systemctl hibernate"
 alias s5="poweroff"
@@ -117,6 +117,11 @@ alias update="sudo pacman -Syyu; paru; sudo snap refresh"
 alias q="exit"
 alias b="sudo tlp-stat -b"
 alias p="sudo tlp-stat -b | grep power_now | grep -P '\s([0-9]*)' -o | grep -P -o '[0-9]*' --color=never"
+alias hercules="cd $HOME/Code/hyperion && ./hercules; cd"
+alias status="git status"
+alias commit="git commit"
+alias push="git push"
+alias commitpush='git commit -a -m "." && git push'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
