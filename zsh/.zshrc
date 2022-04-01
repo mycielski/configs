@@ -122,6 +122,7 @@ alias status="git status"
 alias commit="git commit"
 alias push="git push"
 alias commitpush='git commit -a -m "." && git push'
+# ([0-9]{1,2} )([0-9A-F]{2}) ([^ ]*) # To jest regex do parsowania outputu ascii
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
