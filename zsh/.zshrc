@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH:/home/tomek/.local/share/gem/ruby/3.0.0/bin
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -113,7 +113,7 @@ alias s3="systemctl suspend"
 alias s4="systemctl hibernate"
 alias s5="poweroff"
 alias temp='sensors | grep -P "\+[0-9]{2}\.[0-9]°C"'
-alias update="sudo pacman -Syyu; paru; sudo snap refresh"
+alias update="sudo pacman -Syyu; paru; sudo snap refresh; sudo updatedb"
 alias q="exit"
 alias b="sudo tlp-stat -b"
 alias p="sudo tlp-stat -b | grep power_now | grep -P '\s([0-9]*)' -o | grep -P -o '[0-9]*' --color=never"
@@ -123,8 +123,9 @@ alias commit="git commit"
 alias push="git push"
 alias commitpush='git commit -a -m "." && git push'
 # ([0-9]{1,2} )([0-9A-F]{2}) ([^ ]*) # To jest regex do parsowania outputu ascii
+alias sublister="sublist3r"
+alias py="python"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 
