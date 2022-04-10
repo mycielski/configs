@@ -113,7 +113,7 @@ alias s3="systemctl suspend"
 alias s4="systemctl hibernate"
 alias s5="poweroff"
 alias temp='sensors | grep -P "\+[0-9]{2}\.[0-9]°C"'
-alias update="sudo pacman -Syyu; paru; sudo snap refresh; sudo updatedb"
+alias update="sudo pacman -Syyu; paru; sudo snap refresh; sudo updatedb; flatpak update"
 alias q="exit"
 alias b="sudo tlp-stat -b"
 alias p="sudo tlp-stat -b | grep power_now | grep -P '\s([0-9]*)' -o | grep -P -o '[0-9]*' --color=never"
