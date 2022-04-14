@@ -113,7 +113,7 @@ alias s3="systemctl suspend"
 alias s4="systemctl hibernate"
 alias s5="poweroff"
 alias temp='sensors | grep -P "\+[0-9]{2}\.[0-9]°C"'
-alias update="sudo pacman -Syyu; paru; sudo snap refresh; sudo updatedb; flatpak update; rustup update"
+alias update="sudo pacman -Syyu; paru; sudo snap refresh; sudo updatedb; flatpak update; rustup update; pip install --upgrade pip"
 alias q="exit"
 alias b="sudo tlp-stat -b"
 alias p="sudo tlp-stat -b | grep power_now | grep -P '\s([0-9]*)' -o | grep -P -o '[0-9]*' --color=never"
@@ -125,6 +125,7 @@ alias commitpush='git commit -a -m "." && git push'
 # ([0-9]{1,2} )([0-9A-F]{2}) ([^ ]*) # To jest regex do parsowania outputu ascii
 alias sublister="sublist3r"
 alias py="python"
+alias nc="ncat"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
