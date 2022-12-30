@@ -1,12 +1,5 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH:/home/tomek/.local/share/gem/ruby/3.0.0/bin:$HOME/.local/bin
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -15,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -48,7 +41,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -105,28 +98,38 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias batlv="cat /sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:2f/PNP0C09:00/PNP0C0A:00/power_supply/BAT0/capacity"
-#alias hibernate="systemctl hibernate"
-alias monkeytype="brave monkeytype.com & clear"
-alias s3="systemctl suspend"
-alias s4="systemctl hibernate"
-alias s5="poweroff"
-alias temp='sensors | grep -P "\+[0-9]{2}\.[0-9]°C"'
-alias update="sudo pacman -Syyu; paru; sudo snap refresh; flatpak update; rustup update; pip install --upgrade pip; sudo updatedb"
+# alias ohmyzsh="mate ~/.oh-my-zsh
 alias q="exit"
-alias b="sudo tlp-stat -b"
-alias p="sudo tlp-stat -b | grep power_now | grep -P '\s([0-9]*)' -o | grep -P -o '[0-9]*' --color=never"
-alias hercules="cd $HOME/Code/hyperion && ./hercules; cd"
-alias status="git status"
-alias commit="git commit"
-alias push="git push"
-alias commitpush='git commit -a -m "." && git push'
-# ([0-9]{1,2} )([0-9A-F]{2}) ([^ ]*) # To jest regex do parsowania outputu ascii
-alias sublister="sublist3r"
+alias c="clear"
+alias tf="terraform"
+alias te="terraform"
+alias kso="qemu-system-x86_64"
+alias bruh="brew"
 alias py="python"
-alias nc="ncat"
+alias easy-rsa="easyrsa"
+alias clipboard="pbcopy"
+alias copy="pbcopy"
+alias ipy="ipython"
+alias bytes="stat -f%z"
+alias pyg="pygmentize-3.11 -O style=zenburn"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/homebrew/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
+        . "/opt/homebrew/Caskroom/miniconda/base/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/homebrew/Caskroom/miniconda/base/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
