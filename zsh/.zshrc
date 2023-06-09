@@ -8,7 +8,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -112,6 +113,10 @@ alias copy="pbcopy"
 alias ipy="ipython"
 alias bytes="stat -f%z"
 alias pyg="pygmentize-3.11 -O style=zenburn"
+alias weather='curl wttr.in'
+alias gcp="gcloud"
+alias :q="exit"
+alias :wq="exit"
 
 
 # >>> conda initialize >>>
@@ -133,3 +138,4 @@ export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
