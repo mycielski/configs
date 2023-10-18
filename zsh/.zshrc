@@ -1,3 +1,14 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+# GCP completions
+source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
+source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -101,10 +112,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh
 alias q="exit"
+alias quit="exit"
 alias c="clear"
 alias tf="terraform"
 alias te="terraform"
-alias kso="qemu-system-x86_64"
 alias bruh="brew"
 alias py="python"
 alias easy-rsa="easyrsa"
@@ -117,6 +128,16 @@ alias weather='curl wttr.in'
 alias gcp="gcloud"
 alias :q="exit"
 alias :wq="exit"
+alias vsc="code"
+alias get_idf='. $HOME/esp/esp-idf/export.sh'
+alias idf="idf.py"
+alias venv="python3.11 -m venv ./venv && source venv/bin/activate"
+alias gnuradio="gnuradio-companion"
+alias docker_rmi_dangling="docker rmi $(docker images -qa -f 'dangling=true')"
+alias cocainate="caffeinate -dimu"
+alias azure=az
+alias obsidian="open /Applications/Obsidian.app"
+alias clock="tty-clock"
 
 
 # >>> conda initialize >>>
@@ -139,3 +160,17 @@ export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
 [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
+source /opt/homebrew/etc/bash_completion.d/az
+# complete -o nospace -C /opt/homebrew/bin/az az
+autoload bashcompinit && bashcompinit
+autoload -Uz compinit && compinit
+
+complete -C '/opt/homebrew/bin/aws_completer' aws
+
+fpath=(/opt/homebrew/share/zsh/site-functions $fpath)
