@@ -124,7 +124,7 @@ alias copy="pbcopy"
 alias ipy="ipython"
 alias bytes="stat -f%z"
 alias pyg="pygmentize-3.11 -O style=zenburn"
-alias weather='curl wttr.in'
+alias weather='curl "wttr.in/?format=v2"'
 alias gcp="gcloud"
 alias :q="exit"
 alias :wq="exit"
@@ -133,7 +133,7 @@ alias get_idf='. $HOME/esp/esp-idf/export.sh'
 alias idf="idf.py"
 alias venv="python3.11 -m venv ./venv && source venv/bin/activate"
 alias gnuradio="gnuradio-companion"
-alias docker_rmi_dangling="docker rmi $(docker images -qa -f 'dangling=true')"
+# alias docker_rmi_dangling="docker rmi $(docker images -qa -f 'dangling=true')"
 alias cocainate="caffeinate -dimu"
 alias azure=az
 alias obsidian="open /Applications/Obsidian.app"
@@ -159,7 +159,7 @@ export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
-[[ $commands[kubectl] ]] && source <(kubectl completion zsh)
+# [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
