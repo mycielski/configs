@@ -133,11 +133,11 @@ alias get_idf='. $HOME/esp/esp-idf/export.sh'
 alias idf="idf.py"
 alias venv="python3.11 -m venv ./venv && source venv/bin/activate"
 alias gnuradio="gnuradio-companion"
-# alias docker_rmi_dangling="docker rmi $(docker images -qa -f 'dangling=true')"
 alias cocainate="caffeinate -dimu"
 alias azure=az
 alias obsidian="open /Applications/Obsidian.app"
 alias clock="tty-clock"
+alias k="kubectl"
 
 
 # >>> conda initialize >>>
@@ -168,9 +168,15 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 source /opt/homebrew/etc/bash_completion.d/az
 # complete -o nospace -C /opt/homebrew/bin/az az
-autoload bashcompinit && bashcompinit
-autoload -Uz compinit && compinit
 
 complete -C '/opt/homebrew/bin/aws_completer' aws
 
 fpath=(/opt/homebrew/share/zsh/site-functions $fpath)
+
+export PATH="$HOME/my_execs:$PATH"
+
+source <(kubectl completion zsh)
+autoload -Uz compinit && compinit
+
+# Created by `pipx` on 2024-03-04 16:05:22
+export PATH="$PATH:/Users/tmyciels/.local/bin"
