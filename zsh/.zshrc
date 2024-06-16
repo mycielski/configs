@@ -138,7 +138,9 @@ alias azure=az
 alias obsidian="open /Applications/Obsidian.app"
 alias clock="tty-clock"
 alias k="kubectl"
-
+alias nv="nvim"
+alias vi="nvim"
+alias vim="nvim"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -180,3 +182,4 @@ autoload -Uz compinit && compinit
 
 # Created by `pipx` on 2024-03-04 16:05:22
 export PATH="$PATH:/Users/tmyciels/.local/bin"
+eval "$(fzf --zsh)"
