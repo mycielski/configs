@@ -5,18 +5,14 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# GCP completions
-source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
-source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
-
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
+# Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
+# load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
@@ -101,46 +97,29 @@ source $ZSH/oh-my-zsh.sh
 # fi
 
 # Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# export ARCHFLAGS="-arch $(uname -m)"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# Set personal aliases, overriding those provided by Oh My Zsh libs,
+# plugins, and themes. Aliases can be placed here, though Oh My Zsh
+# users are encouraged to define aliases within a top-level file in
+# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
+# - $ZSH_CUSTOM/aliases.zsh
+# - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh
-alias q="exit"
-alias quit="exit"
-alias c="clear"
-alias tf="terraform"
-alias te="terraform"
-alias bruh="brew"
-alias py="python"
-alias easy-rsa="easyrsa"
-alias clipboard="pbcopy"
-alias copy="pbcopy"
-alias ipy="ipython"
-alias bytes="stat -f%z"
-alias pyg="pygmentize-3.11 -O style=zenburn"
-alias weather='curl "wttr.in/?format=v2"'
-alias gcp="gcloud"
-alias :q="exit"
-alias :wq="exit"
-alias vsc="code"
-alias get_idf='. $HOME/esp/esp-idf/export.sh'
-alias idf="idf.py"
-alias venv="python3.11 -m venv ./venv && source venv/bin/activate"
-alias gnuradio="gnuradio-companion"
-alias cocainate="caffeinate -dimu"
-alias azure=az
-alias obsidian="open /Applications/Obsidian.app"
-alias clock="tty-clock"
-alias k="kubectl"
-alias nv="nvim"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi="nvim"
 alias vim="nvim"
+alias k="kubectl"
+alias wget="wget -c --tries=0 --read-timeout=30 --waitretry=10"
+
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
+
+export RCLONE_FAST_LIST=1
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -157,29 +136,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
-
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /opt/homebrew/bin/terraform terraform
-# [[ $commands[kubectl] ]] && source <(kubectl completion zsh)
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
-
-source /opt/homebrew/etc/bash_completion.d/az
-# complete -o nospace -C /opt/homebrew/bin/az az
-
-complete -C '/opt/homebrew/bin/aws_completer' aws
-
-fpath=(/opt/homebrew/share/zsh/site-functions $fpath)
-
-export PATH="$HOME/my_execs:$PATH"
-
-source <(kubectl completion zsh)
-autoload -Uz compinit && compinit
-
-# Created by `pipx` on 2024-03-04 16:05:22
-export PATH="$PATH:/Users/tmyciels/.local/bin"
-eval "$(fzf --zsh)"
