@@ -32,5 +32,6 @@
   "terminal": {
     "font_family": "MesloLGS NF"
   },
-  "autosave": "on_focus_change"
+  "autosave": "on_focus_change",
+  "format_on_save": "off"
 }
