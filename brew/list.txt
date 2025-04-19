@@ -11,11 +11,14 @@ ca-certificates
 cairo
 certifi
 cffi
+chroma
 cjson
 cryptography
 dav1d
 elixir
 erlang
+eza
+fd
 ffmpeg
 flac
 fontconfig
@@ -24,7 +27,6 @@ frei0r
 fribidi
 fzf
 gettext
-gh
 giflib
 glib
 gmp
@@ -38,6 +40,7 @@ icu4c@76
 icu4c@77
 imagemagick
 imath
+ipfs
 jasper
 jpeg-turbo
 jpeg-xl
@@ -52,8 +55,10 @@ libbluray
 libde265
 libdeflate
 libevent
+libgit2
 libheif
 libidn2
+liblinear
 liblqr
 libmicrohttpd
 libnghttp2
@@ -67,6 +72,7 @@ libsndfile
 libsodium
 libsoxr
 libssh
+libssh2
 libtasn1
 libtiff
 libtool
@@ -86,6 +92,7 @@ libxrender
 libyaml
 little-cms2
 lpeg
+lua
 luajit
 luv
 lynx
@@ -101,6 +108,7 @@ ncdu
 ncurses
 neovim
 nettle
+nmap
 opencore-amr
 openexr
 openjpeg
@@ -112,6 +120,7 @@ pandoc
 pango
 pcre2
 pixman
+procs
 protobuf
 pv
 pycparser
@@ -135,6 +144,8 @@ svt-av1
 telnet
 tesseract
 theora
+tig
+tlrc
 tmux
 tree
 tree-sitter
@@ -154,6 +165,7 @@ xz
 yt-dlp
 zeromq
 zimg
+zoxide
 zstd
 anki
 aws-vpn-client
