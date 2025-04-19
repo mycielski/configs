@@ -78,11 +78,33 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+	colored-man-pages  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colored-man-pages
+	dircycle  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/dircycle
+	eza  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/eza
+	gcloud  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gcloud
+	git-auto-fetch  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git-auto-fetch
+	git  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
+	gitignore  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gitignore
+	globalias  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/globalias
+	ipfs  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/ipfs
+	macos  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/macos
+	mix  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/mix
+	opentofu  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/opentofu
+	per-directory-history  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/per-directory-history
+	rust  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/rust
+	screen  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/screen
+	tailscale  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/tailscale
+	web-search  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/web-search
+)
+
+HISTORY_START_WITH_GLOBAL=true
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+
+export RCLONE_FAST_LIST=1
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -115,11 +137,9 @@ alias vim="nvim"
 alias k="kubectl"
 alias wget="wget -c --tries=0 --read-timeout=30 --waitretry=10"
 
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+ if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
-fi
-
-export RCLONE_FAST_LIST=1
+ fi
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -138,3 +158,5 @@ unset __conda_setup
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+eval "$(zoxide init zsh --cmd j)"
