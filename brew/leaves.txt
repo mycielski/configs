@@ -21,6 +21,7 @@ imagemagick
 ipfs
 k9s
 lynx
+mas
 minikube
 mistertea/et/et
 mosh

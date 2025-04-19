@@ -23,6 +23,7 @@ brew "ipfs"
 brew "k9s"
 brew "kubernetes-cli"
 brew "lynx"
+brew "mas"
 brew "minikube"
 brew "mosh"
 brew "ncdu"
@@ -82,3 +83,9 @@ cask "unnaturalscrollwheels"
 cask "vlc"
 cask "windows-app"
 cask "zed"
+mas "AdGuard for Safari", id: 1440147259
+mas "Goodnotes", id: 1444383602
+mas "Hush", id: 1544743900
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541

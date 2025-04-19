@@ -114,6 +114,7 @@ lynx
 lz4
 lzo
 m4
+mas
 mbedtls
 minikube
 mosh
