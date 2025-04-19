@@ -3,7 +3,7 @@
 #######################
 
 # crontab
-3 */2 * * * cd ~/Desktop/configs/crontab && crontab -l > user
+0 */2 * * * cd ~/Desktop/configs/crontab && crontab -l > user
 
 ###########################
 # Refresh direnv database #
