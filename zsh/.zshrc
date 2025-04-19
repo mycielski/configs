@@ -1,5 +1,5 @@
 #############
-# Oh My Zsh #
+# oh-my-zsh #
 #############
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -91,7 +91,7 @@ plugins=(
 	git-auto-fetch  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git-auto-fetch
 	git  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
 	gitignore  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gitignore
-	globalias  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/globalias
+	# globalias  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/globalias
 	ipfs  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/ipfs
 	macos  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/macos
 	mix  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/mix
@@ -110,7 +110,7 @@ HISTORY_START_WITH_GLOBAL=true
 source $ZSH/oh-my-zsh.sh
 
 #########################
-# Environment variables #
+# environment variables #
 #########################
 
 export RCLONE_FAST_LIST=1
@@ -131,7 +131,7 @@ fi
 # export ARCHFLAGS="-arch $(uname -m)"
 
 ###########
-# Aliases #
+# aliases #
 ###########
 # Set personal aliases, overriding those provided by Oh My Zsh libs,
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh
@@ -150,20 +150,20 @@ alias k="kubectl"
 alias wget="wget -c --tries=0 --read-timeout=30 --waitretry=10"
 
 ##################
-# Autostart tmux #
+# autostart tmux #
 ##################
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
  exec tmux
 fi
 
 #################################
-# Activate powerlevel10k prompt #
+# activate powerlevel10k prompt #
 #################################
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 ###################
-# Activate zoxide #
+# activate zoxide #
 ###################
 eval "$(zoxide init zsh --cmd j)"
 
