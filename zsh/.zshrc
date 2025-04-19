@@ -148,7 +148,7 @@ alias vi="nvim"
 alias vim="nvim"
 alias k="kubectl"
 alias wget="wget -c --tries=0 --read-timeout=30 --waitretry=10"
-alias upgrade="brew update && brew upgrade && mas upgrade && brew cleanup && ~/Desktop/configs/refresh.sh"
+alias upgrade="brew update && brew upgrade && mas upgrade && brew autoremove && brew cleanup && ~/Desktop/configs/refresh.sh || echo '>> Configs already up to date'; echo '>> All done!'"
 
 ##################
 # autostart tmux #
