@@ -13,9 +13,6 @@
 # crontab
 3 */2 * * * cd ~/Desktop/configs/crontab && crontab -l > user
 
-# push configs to git
-30 */2 * * * cd ~/Desktop/configs && git -c user.name="cronjob" commit -a -S -m "refresh: auto sync all tracked configs" && git push
-
 ###########################
 # Refresh direnv database #
 ###########################
