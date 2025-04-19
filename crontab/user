@@ -2,14 +2,6 @@
 # Update configs repo #
 #######################
 
-# brew
-# leaves
-0 */2 * * * cd ~/Desktop/configs/brew && brew leaves > leaves.txt
-# casks
-1 */2 * * * cd ~/Desktop/configs/brew && brew list --cask > list--cask.txt
-# list
-2 */2 * * * cd ~/Desktop/configs/brew && brew list > list.txt
-
 # crontab
 3 */2 * * * cd ~/Desktop/configs/crontab && crontab -l > user
 
@@ -28,4 +20,9 @@
 ########
 @reboot brew autoremove
 @reboot brew cleanup
+
+########
+# tldr #
+########
+@reboot tldr --update
 
