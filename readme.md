@@ -1,4 +1,4 @@
 # Various configs store
 
-- [macOS](/tree/macos)
+- [macOS](/../macos)
 
