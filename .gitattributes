@@ -1,2 +1,1 @@
 ssh/config filter=git-crypt diff=git-crypt
-shpotify/.shpotify.cfg filter=git-crypt diff=git-crypt
