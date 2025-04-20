@@ -148,7 +148,7 @@ alias vi="nvim"
 alias vim="nvim"
 alias k="kubectl"
 alias wget="wget -c --tries=0 --read-timeout=30 --waitretry=10"
-alias upgrade="brew update && brew upgrade && mas upgrade && brew autoremove && brew cleanup && rmdsstore && ~/Desktop/configs/refresh.sh || echo '>> Configs already up-to-date.'; echo '>> All done!'"
+alias upgrade="(echo '>> Updating brew repo'; brew update && echo '>> Upgrading brew packages'; brew upgrade && echo '>> Upgrading App Store packages'; mas upgrade && echo '>> Removing dangling packages'; brew autoremove && echo '>> Cleaning up'; brew cleanup && echo '>> Removing .DS_Store from $(pwd)'; rmdsstore 2>/dev/null || echo '!! Failed to remove .DS_Store') && (~/Desktop/configs/refresh.sh || echo '>> Configs already up-to-date.'); echo '>> All done!'"
 
 ##################
 # autostart tmux #
