@@ -5,9 +5,9 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+#fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
@@ -148,7 +148,62 @@ alias vi="nvim"
 alias vim="nvim"
 alias k="kubectl"
 alias wget="wget -c --tries=0 --read-timeout=30 --waitretry=10"
-alias upgrade="(echo '>> Updating brew repo'; brew update && echo '>> Upgrading brew packages'; brew upgrade && echo '>> Upgrading App Store packages'; mas upgrade && echo '>> Removing dangling packages'; brew autoremove && echo '>> Cleaning up'; brew cleanup && echo '>> Removing .DS_Store from $(pwd)'; rmdsstore 2>/dev/null || echo '!! Failed to remove .DS_Store') && (~/Desktop/configs/refresh.sh || echo '>> Configs already up-to-date.'); echo '>> All done!'"
+#alias upgrade="(echo ':: Updating brew repo'; brew update && echo ':: Upgrading brew packages'; brew upgrade && echo ':: Upgrading App Store packages'; mas upgrade && echo ':: Removing dangling packages'; brew autoremove && echo ':: Cleaning up'; brew cleanup && echo ':: Removing .DS_Store from $(pwd)'; rmdsstore 2>/dev/null || echo '>> Failed to remove .DS_Store') && (~/Desktop/configs/refresh.sh || echo '>> Configs already up-to-date.'); echo '>> All done!'"
+
+###############
+# upgrade all #
+###############
+upgrade() {
+    # Main update sequence - stop if any essential step fails
+    (
+        echo ">> Updating brew repo" &&
+        brew update &&
+        echo ">> Upgrading brew packages" &&
+        brew upgrade &&
+        echo ">> Upgrading App Store packages" &&
+        mas upgrade &&
+        echo ">> Removing dangling packages" &&
+        brew autoremove &&
+        echo ">> Cleaning up" &&
+        brew cleanup &&
+	echo ">> App updates finished!"
+    )
+    (
+    # Iterate over the list of directories relative to the home directory
+    for dir in "$HOME/Desktop" "$HOME/Documents" "$HOME/Downloads"; do
+     # Check if it's actually a directory before trying to change into it
+     if [ -d "$dir" ]; then
+      # Change directory, and only proceed if successful (&&)
+      cd "$dir" && \
+        echo ">> Removing .DS_Store from $(pwd)" && \
+        rmdsstore 2>/dev/null
+      # If cd fails, the echo and rmdsstore commands are skipped for this directory
+      else
+        echo ">> Skipping non-existent directory: $dir" >&2
+      fi
+    done
+
+  # Print the final message after the loop finishes
+  echo ">> .DS_Store removal finished!"
+
+    )
+
+    ( ~/Desktop/configs/refresh.sh || echo ">> Configs already up-to-date." )
+
+    # Capture the exit status of the main sequence above
+    local status=$?
+
+    # Optionally report if the main sequence had issues
+    if [ $status -ne 0 ]; then
+        echo ">> Note: Update sequence may have been interrupted by an error."
+    fi
+
+    # Final message - always runs, mimicking the original semicolon behavior
+    echo ">> All done!"
+
+    # Optionally return the status for scripting
+    return $status
+}
 
 ##################
 # autostart tmux #
