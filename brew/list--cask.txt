@@ -12,6 +12,7 @@ google-earth-pro
 iterm2
 itermai
 jetbrains-toolbox
+macfuse
 microsoft-auto-update
 microsoft-excel
 microsoft-powerpoint
