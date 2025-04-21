@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 #############
 # oh-my-zsh #
 #############
@@ -5,9 +7,9 @@
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-#fi
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
@@ -83,24 +85,24 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	colored-man-pages  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colored-man-pages
-	dircycle  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/dircycle
-	direnv  # https://github.com/direnv/direnv
-	eza  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/eza
-	gcloud  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gcloud
-	git-auto-fetch  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git-auto-fetch
-	git  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
-	gitignore  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gitignore
+	colored-man-pages # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colored-man-pages
+	dircycle          # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/dircycle
+	direnv            # https://github.com/direnv/direnv
+	eza               # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/eza
+	gcloud            # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gcloud
+	git-auto-fetch    # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git-auto-fetch
+	git               # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
+	gitignore         # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gitignore
 	# globalias  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/globalias
-	ipfs  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/ipfs
-	macos  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/macos
-	mix  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/mix
-	opentofu  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/opentofu
-	per-directory-history  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/per-directory-history
-	rust  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/rust
-	screen  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/screen
-	tailscale  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/tailscale
-	web-search  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/web-search
+	ipfs                  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/ipfs
+	macos                 # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/macos
+	mix                   # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/mix
+	opentofu              # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/opentofu
+	per-directory-history # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/per-directory-history
+	rust                  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/rust
+	screen                # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/screen
+	tailscale             # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/tailscale
+	web-search            # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/web-search
 )
 
 # Plugins config.
@@ -122,9 +124,9 @@ export RCLONE_FAST_LIST=1
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='nvim'
+	export EDITOR='nvim' # when ssh'd in
 else
-  export EDITOR='nvim'
+	export EDITOR='nvim' # when local
 fi
 
 # Compilation flags
@@ -148,78 +150,84 @@ alias vi="nvim"
 alias vim="nvim"
 alias k="kubectl"
 alias wget="wget -c --tries=0 --read-timeout=30 --waitretry=10"
-#alias upgrade="(echo ':: Updating brew repo'; brew update && echo ':: Upgrading brew packages'; brew upgrade && echo ':: Upgrading App Store packages'; mas upgrade && echo ':: Removing dangling packages'; brew autoremove && echo ':: Cleaning up'; brew cleanup && echo ':: Removing .DS_Store from $(pwd)'; rmdsstore 2>/dev/null || echo '>> Failed to remove .DS_Store') && (~/Desktop/configs/refresh.sh || echo '>> Configs already up-to-date.'); echo '>> All done!'"
 
 ###############
 # upgrade all #
 ###############
 upgrade() {
-    # Main update sequence - stop if any essential step fails
-    (
-        echo ">> Updating brew repo" &&
-        brew update &&
-        echo ">> Upgrading brew packages" &&
-        brew upgrade &&
-        echo ">> Upgrading App Store packages" &&
-        mas upgrade &&
-        echo ">> Removing dangling packages" &&
-        brew autoremove &&
-        echo ">> Cleaning up" &&
-        brew cleanup &&
-	echo ">> App updates finished!"
-    )
-    (
-    # Iterate over the list of directories relative to the home directory
-    for dir in "$HOME/Desktop" "$HOME/Documents" "$HOME/Downloads"; do
-     # Check if it's actually a directory before trying to change into it
-     if [ -d "$dir" ]; then
-      # Change directory, and only proceed if successful (&&)
-      cd "$dir" && \
-        echo ">> Removing .DS_Store from $(pwd)" && \
-        rmdsstore 2>/dev/null
-      # If cd fails, the echo and rmdsstore commands are skipped for this directory
-      else
-        echo ">> Skipping non-existent directory: $dir" >&2
-      fi
-    done
+	local job_status=0
 
-  # Print the final message after the loop finishes
-  echo ">> .DS_Store removal finished!"
+	# upgrade packages
+	(
+		echo "$0 >> Updating brew repo" &&
+			brew update &&
+			echo "$0 >> Upgrading brew packages" &&
+			brew upgrade &&
+			echo "$0 >> Upgrading App Store packages" &&
+			mas upgrade &&
+			echo "$0 >> Removing dangling packages" &&
+			brew autoremove &&
+			echo "$0 >> Cleaning up" &&
+			brew cleanup &&
+			echo "$0 >> App updates finished!"
+	) || (echo "$0 !! Failed to upgrade packages" && job_status=$(($job_status + 1)))
 
-    )
+	# remove .DS_Store
+	(
+		local dsstore_status=0
+		for dir in "$HOME/Desktop" "$HOME/Documents" "$HOME/Downloads"; do
+			if [ -d "$dir" ]; then
+				cd "$dir" &&
+					echo "$0 >> Removing .DS_Store from $dir" &&
+					rmdsstore 2>/dev/null ||
+					(echo "$0 !! Failed to remove .DS_Store from $dir" &&
+						dsstore_status=1)
+			else
+				echo "$0 !! Skipping non-existent directory: $dir" >&2
+			fi
+		done
 
-    ( ~/Desktop/configs/refresh.sh || echo ">> Configs already up-to-date." )
+		echo "$0 >> .DS_Store removal finished!"
+		job_status=$(($job_status + 2 * $dsstore_status))
+	)
 
-    # Capture the exit status of the main sequence above
-    local status=$?
+	# back up configs to git
+	echo "$0 >> Backing up configs to git"
+	($HOME/Desktop/configs/refresh.sh || job_status=$(($job_status + 4)))
 
-    # Optionally report if the main sequence had issues
-    if [ $status -ne 0 ]; then
-        echo ">> Note: Update sequence may have been interrupted by an error."
-    fi
+	echo "$0 >> Updating tldr database"
+	tldr --update || job_status=$(($job_status + 10))
 
-    # Final message - always runs, mimicking the original semicolon behavior
-    echo ">> All done!"
+	echo "$0 >> Emptying trash"
+	osascript -e """tell application 'Finder'
+		set trashItemCount to count of items in trash
+		if trashItemCount > 1 then
+			empty trash
+		end if
+	end tell""" || job_status=$(($job_status + 20))
 
-    # Optionally return the status for scripting
-    return $status
+	echo "$0 >> Pruning direnv"
+	direnv prune || job_status=$(($job_status + 40))
+
+	echo "$0 >> All done!"
+
+	return $job_status
 }
 
 ##################
 # autostart tmux #
 ##################
-if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
- exec tmux
+if command -v tmux &>/dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+	exec tmux
 fi
 
 #################################
 # activate powerlevel10k prompt #
 #################################
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh
 
 ###################
 # activate zoxide #
 ###################
 eval "$(zoxide init zsh --cmd j)"
-
