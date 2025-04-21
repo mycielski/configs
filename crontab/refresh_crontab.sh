@@ -9,12 +9,13 @@ if [ "$(id -u)" -eq 0 ]; then
 	########
 	# root #
 	echo "$0 >> Dumping root's crontab -l"
-else
-	########
-	# user #
-	echo "$0 >> Dumping user's crontab -l"
-	crontab -l >"$script_dir/user"
+	crontab -l >"$script_dir/root"
 fi
+########
+# user #
+sudo su "$USER"
+echo "$0 >> Dumping user's crontab -l"
+crontab -l >"$script_dir/user"
 
 ################
 # push to repo #
