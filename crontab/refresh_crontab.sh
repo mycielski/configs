@@ -2,7 +2,7 @@
 
 script_dir="$(cd "$(dirname "$0")" && pwd)"
 
-whoami  # TODO remove
+whoami # TODO remove
 
 ###########
 # crontab #
