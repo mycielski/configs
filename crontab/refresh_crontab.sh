@@ -25,7 +25,7 @@ crontab -l >"$script_dir/user"
 ################
 (
 	cd "$script_dir" &&
-		if [[ -n $(git status --short) ]]; then
+		if [[ -n $(git status . --short) ]]; then
 			echo "$0 >> Commiting configs to git" &&
 				git add . &&
 				git commit -S -m "chore: refresh crontab config" &&
