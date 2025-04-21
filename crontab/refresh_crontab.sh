@@ -10,10 +10,11 @@ if [ "$(id -u)" -eq 0 ]; then
 	# root #
 	echo "$0 >> Dumping root's crontab -l"
 	crontab -l >"$script_dir/root"
+	sudo --user "$USER" "$0"
+	exit
 fi
 ########
 # user #
-sudo su "$USER"
 echo "$0 >> Dumping user's crontab -l"
 crontab -l >"$script_dir/user"
 
