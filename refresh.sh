@@ -2,6 +2,8 @@
 
 script_dir="$(cd "$(dirname "$0")" && pwd)"
 
+# find . -type f -not -path "*.git*" -path "./*/refresh.sh"  # TODO: for later
+
 ########
 # brew #
 ########
