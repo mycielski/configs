@@ -199,12 +199,12 @@ upgrade() {
 	tldr --update || job_status=$(($job_status + 10))
 
 	echo "$0 >> Emptying trash"
-	osascript -e """tell application 'Finder'
+	osascript -e '''tell application "Finder"
 		set trashItemCount to count of items in trash
 		if trashItemCount > 1 then
 			empty trash
 		end if
-	end tell""" || job_status=$(($job_status + 20))
+	end tell''' || job_status=$(($job_status + 20))
 
 	echo "$0 >> Pruning direnv"
 	direnv prune || job_status=$(($job_status + 40))
