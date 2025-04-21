@@ -11,11 +11,16 @@ brew list --cask >"$script_dir/brew/list--cask.txt" &
 brew leaves >"$script_dir/brew/leaves.txt" &
 brew bundle dump --force --file="$script_dir/brew/Brewfile" &
 
+###########
+# crontab #
+###########
+echo "$0 >> Dumping crontab"
+crontab -l >"$script_dir/crontab/user" &
+
 ################################
 # await for all jobs to finish #
 ################################
 wait
-echo "$0 >> Brew state dumped"
 
 ################
 # push to repo #
