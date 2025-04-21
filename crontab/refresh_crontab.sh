@@ -10,18 +10,16 @@ if [ "$(id -u)" -eq 0 ]; then
 	# root #
 	echo "$0 >> Dumping root's crontab -l"
 	crontab -l >"$script_dir/root" &
-# 	sudo --user "$SUDO_USER" "$0"
-# 	exit
+ 	sudo --user "$SUDO_USER" "$0"
+	wait
+ 	exit
 fi
 
 ########
 # user #
-echo "asdf"
-sudo su "$SUDO_USER"
 echo "$0 >> Dumping user's crontab -l"
 crontab -l >"$script_dir/user"
 
-wait
 ################
 # push to repo #
 ################
