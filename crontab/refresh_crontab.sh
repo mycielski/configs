@@ -2,8 +2,6 @@
 
 script_dir="$(cd "$(dirname "$0")" && pwd)"
 
-whoami # TODO remove
-
 ###########
 # crontab #
 ###########
@@ -12,7 +10,7 @@ if [ "$(id -u)" -eq 0 ]; then
 	# root #
 	echo "$0 >> Dumping root's crontab -l"
 	crontab -l >"$script_dir/root"
-	sudo --user "$SUDO_USER" "$0"
+	sudo --user "$SUDO_USER" "$0" &
 	exit
 fi
 ########
