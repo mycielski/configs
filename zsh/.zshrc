@@ -177,11 +177,11 @@ upgrade() {
 		local dsstore_status=0
 		for dir in "$HOME/Desktop" "$HOME/Documents" "$HOME/Downloads"; do
 			if [ -d "$dir" ]; then
-				(cd "$dir" &&
+				cd "$dir" &&
 					echo "$0 >> Removing .DS_Store from $dir" &&
 					rmdsstore 2>/dev/null ||
 					(echo "$0 !! Failed to remove .DS_Store from $dir" &&
-					dsstore_status=1)) &
+					dsstore_status=1)
 			else
 				echo "$0 !! Skipping non-existent directory: $dir" >&2
 			fi
