@@ -9,3 +9,16 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.number = true
 vim.opt.relativenumber = true
 
+
+-----------
+-- theme --
+-----------
+vim.opt.termguicolors = true
+
+local prettiest_themes = {
+	"koehler",
+	"lunaperche",
+	"sorbet",
+	"wildcharm",
+}
+vim.cmd("colorscheme " .. prettiest_themes[3])
