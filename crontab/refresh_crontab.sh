@@ -30,4 +30,4 @@ fi
 		else
 			echo "$0 >> Configs already up-to-date in remote"
 		fi
-)
+) || true
