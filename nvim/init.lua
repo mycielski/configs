@@ -1,3 +1,5 @@
+math.randomseed(os.time())
+
 --------------------------------
 -- sync clipboard with system --
 --------------------------------
@@ -20,5 +22,9 @@ local prettiest_themes = {
 	"lunaperche",
 	"sorbet",
 	"wildcharm",
+	"slate",
+	"unokai",
+
 }
-vim.cmd("colorscheme " .. prettiest_themes[3])
+random_theme = prettiest_themes[math.random(#prettiest_themes)]
+vim.cmd("colorscheme " .. random_theme)
