@@ -1,3 +1,4 @@
+
 math.randomseed(os.time())
 
 --------------------------------
@@ -17,14 +18,15 @@ vim.opt.relativenumber = true
 -----------
 vim.opt.termguicolors = true
 
-local prettiest_themes = {
-	"koehler",
-	"lunaperche",
+local pretty_themes = {
 	"sorbet",
-	"wildcharm",
 	"slate",
 	"unokai",
-
 }
-random_theme = prettiest_themes[math.random(#prettiest_themes)]
-vim.cmd("colorscheme " .. random_theme)
+local oled_themes = {
+	"koehler",
+	"lunaperche",
+	"wildcharm",
+}
+-- random_theme = pretty_themes[math.random(#pretty_themes)]
+vim.cmd("colorscheme " .. "unokai")
