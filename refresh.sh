@@ -2,7 +2,7 @@
 
 script_dir="$(cd "$(dirname "$0")" && pwd)"
 
-find "$script_dir" -type f -path "$script_dir/.git" -prune -path "$script_dir/*/refresh_*.sh" | xargs -n1 -P0 sh
+find "$script_dir" -path "$script_dir/.git" -prune -or -type f -path "$script_dir/*/refresh_*.sh" -print | xargs -n1 -P0 sh
 
 git add "$script_dir/**/*.md"
 git commit -S -m "docs: general updates"
