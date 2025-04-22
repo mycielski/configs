@@ -2,7 +2,7 @@
 
 script_dir="$(cd "$(dirname "$0")" && pwd)"
 
-find . -type f -not -path "*.git*" -path "./**/refresh_*.sh" | xargs -n1 -P0 sh
+find "$script_dir" -type f -not -path "*.git*" -path "$script_dir/*/refresh_*.sh" #| xargs -n1 -P0 sh
 
 git add "$script_dir"
 git commit -S -m "chore: general updates"
