@@ -6,14 +6,14 @@ script_dir="$(cd "$(dirname "$0")" && pwd)"
 # bash #
 ########
 echo "$0 >> Dumping .bashrc state"
-cp "$HOME/.bashrc" "$script_dir/.bashrc"
+cp "$HOME/.bashrc" "$script_dir"
 
 ################
 # push to repo #
 ################
 (
 	cd "$script_dir" &&
-		if [[ -n $(git status --short) ]]; then
+		if [[ -n $(git status --short .) ]]; then
 			echo "$0 >> Commiting configs to git" &&
 				git add . &&
 				git commit -S -m "chore: refresh bash config" &&
