@@ -23,10 +23,20 @@ local pretty_themes = {
 	"slate",
 	"unokai",
 }
+
 local oled_themes = {
 	"koehler",
 	"lunaperche",
 	"wildcharm",
 }
--- random_theme = pretty_themes[math.random(#pretty_themes)]
+
+function theme(type)
+	if type == oled or type == "oled" then
+		chosen_theme_name = oled_themes[math.random(#oled_themes)]
+	else
+		chosen_theme_name = pretty_themes[math.random(#pretty_themes)]
+	end
+	vim.cmd("colorscheme " .. chosen_theme_name)
+end
+
 vim.cmd("colorscheme " .. "unokai")
