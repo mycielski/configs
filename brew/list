@@ -153,6 +153,7 @@ rtmpdump
 rubberband
 sdl2
 shared-mime-info
+shellcheck
 shfmt
 snappy
 speex

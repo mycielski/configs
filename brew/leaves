@@ -34,6 +34,7 @@ pv
 ranger
 rclone
 ripgrep
+shellcheck
 shfmt
 telnet
 tig
