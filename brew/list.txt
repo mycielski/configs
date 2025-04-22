@@ -185,6 +185,7 @@ x265
 xorgproto
 xvid
 xz
+yazi
 yt-dlp
 zeromq
 zimg
