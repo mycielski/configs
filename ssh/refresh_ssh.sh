@@ -15,7 +15,7 @@ cp "$HOME/.ssh/config" "$script_dir"
 	cd "$script_dir" &&
 		if [[ -n $(git status --short .) ]]; then
 			echo "$0 >> Commiting configs to git" &&
-				git add . &&
+				git add config &&
 				(git-crypt status . | grep "  encrypted: config$" 1>/dev/null || (
 					echo "$0 !! git-crypt error"
 					false

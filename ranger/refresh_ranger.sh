@@ -22,7 +22,7 @@ wait
 	cd "$script_dir" &&
 		if [[ -n $(git status --short .) ]]; then
 			echo "$0 >> Commiting configs to git" &&
-				git add . &&
+				git add commands.py commands_full.py rc.conf rifle.conf scope.sh &&
 				git commit -S -m "chore: refresh ranger config" &&
 				echo "$0 >> Changes commited"
 		else

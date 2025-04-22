@@ -19,7 +19,7 @@ wait
 	cd "$script_dir" &&
 		if [[ -n $(git status --short .) ]]; then
 			echo "$0 >> Commiting configs to git" &&
-				git add . &&
+				git add keymap.json settings.json &&
 				git commit -S -m "chore: refresh zed config" &&
 				echo "$0 >> Changes commited"
 		else

@@ -15,7 +15,7 @@ cp "$HOME/.bashrc" "$script_dir"
 	cd "$script_dir" &&
 		if [[ -n $(git status --short .) ]]; then
 			echo "$0 >> Commiting configs to git" &&
-				git add . &&
+				git add .bashrc &&
 				git commit -S -m "chore: refresh bash config" &&
 				echo "$0 >> Changes commited"
 		else

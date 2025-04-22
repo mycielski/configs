@@ -15,7 +15,7 @@ cp "$HOME/.config/nvim/init.lua" "$script_dir"
 	cd "$script_dir" &&
 		if [[ -n $(git status --short .) ]]; then
 			echo "$0 >> Commiting configs to git" &&
-				git add . &&
+				git add init.lua &&
 				git commit -S -m "chore: refresh nvim config" &&
 				echo "$0 >> Changes commited"
 		else

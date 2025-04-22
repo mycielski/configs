@@ -23,7 +23,7 @@ wait
 	cd "$script_dir" &&
 		if [[ -n $(git status --short .) ]]; then
 			echo "$0 >> Commiting configs to git" &&
-				git add . &&
+				git add list.txt list--cask.txt leaves.txt Brewfile &&
 				git commit -S -m "chore: refresh brew configs" &&
 				echo "$0 >> Changes commited"
 		else

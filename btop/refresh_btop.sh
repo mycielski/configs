@@ -15,7 +15,7 @@ cp "$HOME/.config/btop/btop.conf" "$script_dir"
 	cd "$script_dir" &&
 		if [[ -n $(git status --short .) ]]; then
 			echo "$0 >> Commiting configs to git" &&
-				git add . &&
+				git add btop.conf &&
 				git commit -S -m "chore: refresh btop config" &&
 				echo "$0 >> Changes commited"
 		else
