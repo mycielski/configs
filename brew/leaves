@@ -29,6 +29,8 @@ nmap
 opentofu
 pandoc
 pinentry-mac
+podman
+prettier
 procs
 pv
 ranger

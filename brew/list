@@ -8,6 +8,7 @@ bash
 brotli
 browsh
 btop
+c-ares
 ca-certificates
 cairo
 certifi
@@ -122,6 +123,7 @@ ncurses
 neovim
 nettle
 nmap
+node
 npth
 opencore-amr
 openexr
@@ -136,6 +138,8 @@ pcre2
 pinentry
 pinentry-mac
 pixman
+podman
+prettier
 procs
 protobuf
 pv
@@ -193,7 +197,6 @@ aws-vpn-client
 basictex
 burp-suite
 chromedriver
-docker
 firefox
 gimp
 google-chrome
