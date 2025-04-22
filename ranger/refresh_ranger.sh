@@ -13,6 +13,8 @@ cp "$ranger_cfg_dir/rc.conf" "$script_dir" &
 cp "$ranger_cfg_dir/rifle.conf" "$script_dir" &
 cp "$ranger_cfg_dir/scope.sh" "$script_dir" &
 
+wait
+
 ################
 # push to repo #
 ################
