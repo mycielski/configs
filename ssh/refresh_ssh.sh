@@ -6,7 +6,7 @@ script_dir="$(cd "$(dirname "$0")" && pwd)"
 # nvim #
 ########
 echo "$0 >> Dumping config state"
-cp "$HOME/.ssh/config" "$script_dir/config"
+cp "$HOME/.ssh/config" "$script_dir"
 
 ################
 # push to repo #
@@ -16,7 +16,10 @@ cp "$HOME/.ssh/config" "$script_dir/config"
 		if [[ -n $(git status --short .) ]]; then
 			echo "$0 >> Commiting configs to git" &&
 				git add . &&
-				(git-crypt status . | grep "  encrypted: config$" 1>/dev/null || (echo "$0 !! git-crypt error"; false)) &&
+				(git-crypt status . | grep "  encrypted: config$" 1>/dev/null || (
+					echo "$0 !! git-crypt error"
+					false
+				)) &&
 				git commit -S -m "chore: refresh ssh config" &&
 				echo "$0 >> Changes commited"
 		else
