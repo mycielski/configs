@@ -6,9 +6,10 @@ script_dir="$(cd "$(dirname "$0")" && pwd)"
 # brew #
 ########
 echo "$0 >> Dumping brew state"
-brew list >"$script_dir/list.txt" &
-brew list --cask >"$script_dir/list--cask.txt" &
-brew leaves >"$script_dir/leaves.txt" &
+brew list >"$script_dir/list" &
+brew list --cask >"$script_dir/list--cask" &
+brew leaves >"$script_dir/leaves" &
+brew tap >"$script_dir/tap" &
 brew bundle dump --force --file="$script_dir/Brewfile" &
 
 ################################
@@ -23,7 +24,7 @@ wait
 	cd "$script_dir" &&
 		if [[ -n $(git status --short .) ]]; then
 			echo "$0 >> Commiting configs to git" &&
-				git add list.txt list--cask.txt leaves.txt Brewfile &&
+				git add list list--cask leaves tap Brewfile &&
 				git commit -S -m "chore: refresh brew configs" &&
 				echo "$0 >> Changes commited"
 		else
