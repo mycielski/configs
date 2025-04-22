@@ -194,7 +194,7 @@ upgrade() {
 
 	# back up configs to git
 	echo "$0 >> Backing up configs to git"
-	($HOME/Desktop/configs/refresh.sh || job_status=$(($job_status + 4)))
+	(sh "$HOME/Desktop/configs/refresh.sh" || job_status=$(($job_status + 4)))
 
 	echo "$0 >> Updating tldr database"
 	tldr --update || job_status=$(($job_status + 10))
