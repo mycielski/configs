@@ -85,15 +85,15 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	colored-man-pages # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colored-man-pages
-	dircycle          # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/dircycle
-	direnv            # https://github.com/direnv/direnv
-	eza               # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/eza
-	gcloud            # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gcloud
-	git-auto-fetch    # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git-auto-fetch
-	git               # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
-	gitignore         # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gitignore
-	globalias  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/globalias
+	colored-man-pages     # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colored-man-pages
+	dircycle              # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/dircycle
+	direnv                # https://github.com/direnv/direnv
+	eza                   # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/eza
+	gcloud                # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gcloud
+	git-auto-fetch        # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git-auto-fetch
+	git                   # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
+	gitignore             # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gitignore
+	globalias             # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/globalias
 	ipfs                  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/ipfs
 	macos                 # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/macos
 	mix                   # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/mix
@@ -182,7 +182,7 @@ upgrade() {
 					echo "$0 >> Removing .DS_Store from $dir" &&
 					rmdsstore 2>/dev/null ||
 					(echo "$0 !! Failed to remove .DS_Store from $dir" &&
-					dsstore_status=1)
+						dsstore_status=1)
 			else
 				echo "$0 !! Skipping non-existent directory: $dir" >&2
 			fi
@@ -191,10 +191,6 @@ upgrade() {
 		echo "$0 >> .DS_Store removal finished!"
 		job_status=$(($job_status + 2 * $dsstore_status))
 	)
-
-	# back up configs to git
-	echo "$0 >> Backing up configs to git"
-	(sh "$HOME/Desktop/configs/refresh.sh" || job_status=$(($job_status + 4)))
 
 	echo "$0 >> Updating tldr database"
 	tldr --update || job_status=$(($job_status + 10))
@@ -209,6 +205,9 @@ upgrade() {
 
 	echo "$0 >> Pruning direnv"
 	direnv prune || job_status=$(($job_status + 40))
+
+	echo "$0 >> Backing up configs to git"
+	(sh "$HOME/Desktop/configs/refresh.sh" || job_status=$(($job_status + 4)))
 
 	echo "$0 >> All done!"
 
@@ -232,3 +231,8 @@ fi
 # activate zoxide #
 ###################
 eval "$(zoxide init zsh --cmd j)"
+
+#########################
+# fzf shell integration #
+#########################
+source <(fzf --zsh)
