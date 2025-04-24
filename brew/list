@@ -35,6 +35,7 @@ gettext
 gh
 giflib
 git-crypt
+git-lfs
 glib
 gmp
 gnupg
