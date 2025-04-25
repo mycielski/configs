@@ -15,3 +15,7 @@ Stuff that can't be easily copied to a repo.
 ### Caps Lock map to Escape
 
 Settings $\rightarrow$ Keyboard $\rightarrow$ Keyboard Shortcuts... $\rightarrow$ Modifier Keys $\rightarrow$ Caps Lock (⇪) key $\rightarrow$ ␛ Escape
+
+### Remove from dock
+
+Settings $\rightarrow$ Desktop & Dock $\rightarrow$ Dock settings $\rightarrow$ Show suggested and recent apps in Dock $\rightarrow$ Off
