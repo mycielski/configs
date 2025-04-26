@@ -1,0 +1,26 @@
+[colors.normal]
+black = "#000000"
+
+[colors.primary]
+background = "#000000"
+
+[general]
+import = [
+	# OLED themes:
+	# "~/Desktop/configs/alacritty/alacritty-theme/themes/chicago95.toml"
+	# "~/Desktop/configs/alacritty/alacritty-theme/themes/hyper.toml"
+	# "~/Desktop/configs/alacritty/alacritty-theme/themes/monokai_charcoal.toml"
+	# "~/Desktop/configs/alacritty/alacritty-theme/themes/pastel_dark.toml"
+	"~/Desktop/configs/alacritty/alacritty-theme/themes/terminal_app.toml"
+	# "~/Desktop/configs/alacritty/alacritty-theme/themes/tomorrow_night_bright.toml"
+	# "~/Desktop/configs/alacritty/alacritty-theme/themes/xterm.toml"
+]
+live_config_reload = true
+
+[window]
+decorations = "None"
+decorations_theme_variant = "Dark"
+padding = { x = 0, y = 0}
+
+[font.normal]
+family = "MesloLGS NF"
