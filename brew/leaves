@@ -8,7 +8,6 @@ direnv
 elixir
 eza
 fd
-ffmpeg
 fzf
 gh
 git-crypt
@@ -16,6 +15,7 @@ git-lfs
 gnupg
 helm
 htop
+iina/mpv-iina/ffmpeg-iina
 imagemagick
 ipfs
 k9s
@@ -24,12 +24,14 @@ mas
 minikube
 mistertea/et/et
 mosh
+mpv
 ncdu
 neovim
 nmap
 opentofu
 pandoc
 pinentry-mac
+pkgconf
 podman
 prettier
 procs
@@ -48,5 +50,4 @@ uv
 watch
 wget
 yazi
-yt-dlp
 zoxide

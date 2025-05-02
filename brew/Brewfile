@@ -1,5 +1,6 @@
 tap "airbytehq/tap"
 tap "browsh-org/browsh"
+tap "iina/mpv-iina"
 tap "mistertea/et"
 brew "xz"
 brew "autossh"
@@ -27,6 +28,8 @@ brew "lynx"
 brew "mas"
 brew "minikube"
 brew "mosh"
+brew "yt-dlp"
+brew "mpv"
 brew "ncdu"
 brew "neovim"
 brew "nmap"
@@ -51,7 +54,6 @@ brew "uv"
 brew "watch"
 brew "wget"
 brew "yazi"
-brew "yt-dlp"
 brew "zoxide"
 brew "browsh-org/browsh/browsh"
 brew "mistertea/et/et"
@@ -95,3 +97,4 @@ mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Vimlike", id: 1584519802
+mas "Xcode", id: 497799835
