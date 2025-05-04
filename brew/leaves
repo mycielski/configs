@@ -8,6 +8,7 @@ direnv
 elixir
 eza
 fd
+ffmpeg
 fzf
 gh
 git-crypt
@@ -24,7 +25,6 @@ mas
 minikube
 mistertea/et/et
 mosh
-mpv
 ncdu
 neovim
 nmap
@@ -50,4 +50,5 @@ uv
 watch
 wget
 yazi
+yt-dlp
 zoxide

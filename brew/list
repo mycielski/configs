@@ -78,7 +78,6 @@ libmicrohttpd
 libnghttp2
 libogg
 libomp
-libplacebo
 libpng
 libraw
 librist
@@ -118,12 +117,9 @@ m4
 mas
 mbedtls
 minikube
-molten-vk
 mosh
 mpdecimal
 mpg123
-mpv
-mujs
 ncdu
 ncurses
 neovim
@@ -162,7 +158,6 @@ ripgrep
 rtmpdump
 rubberband
 sdl2
-shaderc
 shared-mime-info
 shellcheck
 shfmt
@@ -179,15 +174,11 @@ tlrc
 tmux
 tree
 tree-sitter
-uchardet
 unbound
 unibilium
 unixodbc
 utf8proc
 uv
-vapoursynth
-vulkan-headers
-vulkan-loader
 watch
 webp
 wget
