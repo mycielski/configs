@@ -22,5 +22,9 @@ decorations = "None"
 decorations_theme_variant = "Dark"
 padding = { x = 0, y = 0}
 
+[font]
+size = 13
+
 [font.normal]
 family = "MesloLGS NF"
+

@@ -1,3 +1,6 @@
 [submodule "alacritty/alacritty-theme"]
 	path = alacritty/alacritty-theme
 	url = https://github.com/alacritty/alacritty-theme.git
+[submodule "qbittorrent/search-plugins"]
+	path = qbittorrent/search-plugins
+	url = git@github.com:qbittorrent/search-plugins.git
