@@ -6,13 +6,8 @@ find "$script_dir" -path "$script_dir/.git" -prune -or -type f -path "$script_di
 
 (
 	cd "$script_dir" &&
-		git add "$script_dir/**/*.md" &&
-		git commit -S -m "docs: general updates"
-
-	git add "$script_dir" &&
-		git commit -S -m "chore: general updates"
-
-	git push || echo "$0 >> Nothing to push"
+		git push || echo "$0 >> Nothing to push";
+	git pull
 )
 
 echo "$0 >> All done!"

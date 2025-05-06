@@ -5,6 +5,7 @@ script_dir="$(cd "$(dirname "$0")" && pwd)"
 ########
 # brew #
 ########
+brew autoremove
 echo "$0 >> Dumping brew state"
 brew list >"$script_dir/list" &
 brew list --cask >"$script_dir/list--cask" &
@@ -16,6 +17,7 @@ brew bundle dump --force --file="$script_dir/Brewfile" &
 # await for all jobs to finish #
 ################################
 wait
+brew cleanup
 
 ################
 # push to repo #
