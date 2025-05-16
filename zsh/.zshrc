@@ -93,7 +93,7 @@ plugins=(
 	git-auto-fetch        # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git-auto-fetch
 	git                   # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
 	gitignore             # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gitignore
-	globalias             # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/globalias
+	# globalias             # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/globalias
 	ipfs                  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/ipfs
 	macos                 # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/macos
 	mix                   # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/mix
