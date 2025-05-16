@@ -151,6 +151,7 @@ alias vim="nvim"
 alias k="kubectl"
 alias wget="wget -c --tries=0 --read-timeout=30 --waitretry=10"
 alias docker="podman"
+alias ranger="yazi"
 
 ###############
 # upgrade all #
