@@ -36,6 +36,7 @@ podman
 prettier
 procs
 pv
+qpdf
 rclone
 ripgrep
 shellcheck

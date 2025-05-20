@@ -150,6 +150,7 @@ pycparser
 python-packaging
 python@3.12
 python@3.13
+qpdf
 rav1e
 rclone
 readline
