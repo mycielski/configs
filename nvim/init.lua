@@ -40,3 +40,8 @@ function theme(type)
 end
 
 vim.cmd("colorscheme " .. "unokai")
+
+------------
+-- uganda --
+------------
+vim.o.shortmess = vim.o.shortmess .. "I"
