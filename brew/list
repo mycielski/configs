@@ -212,6 +212,7 @@ aws-vpn-client
 basictex
 burp-suite
 chromedriver
+corretto@11
 cursor
 firefox
 gimp
