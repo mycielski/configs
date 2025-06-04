@@ -20,7 +20,6 @@ cryptography
 curl
 dav1d
 direnv
-doxygen
 elixir
 erlang
 et
@@ -34,8 +33,6 @@ freetype
 frei0r
 fribidi
 fzf
-gd
-gdk-pixbuf
 gettext
 gh
 giflib
@@ -46,8 +43,6 @@ gmp
 gnupg
 gnutls
 graphite2
-graphviz
-gts
 harfbuzz
 helm
 highway
@@ -67,7 +62,6 @@ leptonica
 libarchive
 libass
 libassuan
-libavif
 libb2
 libbluray
 libde265
@@ -88,7 +82,6 @@ libomp
 libpng
 libraw
 librist
-librsvg
 libsamplerate
 libsndfile
 libsodium
@@ -125,16 +118,13 @@ m4
 mas
 mbedtls
 minikube
-miniupnpc
 mosh
 mpdecimal
 mpg123
 ncdu
 ncurses
 neovim
-netpbm
 nettle
-ninja
 nmap
 node
 npth
@@ -176,7 +166,6 @@ snappy
 speex
 sqlite
 srt
-sunshine-beta
 svt-av1
 telnet
 tesseract

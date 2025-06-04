@@ -6,7 +6,6 @@ btop
 chroma
 cmake
 direnv
-doxygen
 elixir
 eza
 fd
@@ -16,14 +15,12 @@ gh
 git-crypt
 git-lfs
 gnupg
-graphviz
 helm
 htop
 iina/mpv-iina/ffmpeg-iina
 imagemagick
 ipfs
 k9s
-lizardbyte/homebrew/sunshine-beta
 lynx
 mas
 minikube
@@ -31,7 +28,6 @@ mistertea/et/et
 mosh
 ncdu
 neovim
-ninja
 nmap
 opentofu
 pandoc
