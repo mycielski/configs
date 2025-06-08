@@ -47,7 +47,6 @@ harfbuzz
 helm
 highway
 htop
-icu4c@76
 icu4c@77
 imagemagick
 imath
@@ -144,11 +143,9 @@ pixman
 pkgconf
 podman
 prettier
-procs
 protobuf
 pv
 pycparser
-python-packaging
 python@3.12
 python@3.13
 qpdf
