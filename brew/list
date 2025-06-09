@@ -142,6 +142,7 @@ pinentry-mac
 pixman
 pkgconf
 podman
+poetry
 prettier
 protobuf
 pv
