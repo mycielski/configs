@@ -6,6 +6,7 @@ burp-suite
 chromedriver
 corretto@11
 cursor
+element
 firefox
 gimp
 google-chrome
