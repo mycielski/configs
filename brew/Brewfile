@@ -94,6 +94,7 @@ cask "tailscale-app"
 cask "unnaturalscrollwheels"
 cask "vlc"
 cask "windows-app"
+cask "windsurf"
 cask "zed"
 mas "AdGuard for Safari", id: 1440147259
 mas "Goodnotes", id: 1444383602
