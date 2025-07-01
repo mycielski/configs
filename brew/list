@@ -127,6 +127,7 @@ nettle
 nmap
 node
 npth
+ollama
 opencore-amr
 openexr
 openjpeg
@@ -229,6 +230,7 @@ steam
 synthesia
 tailscale
 tailscale-app
+telegram
 unnaturalscrollwheels
 vlc
 windows-app
