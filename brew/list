@@ -1,7 +1,21 @@
 abseil
 aom
+apache-arrow
 aribb24
 autossh
+aws-c-auth
+aws-c-cal
+aws-c-common
+aws-c-compression
+aws-c-event-stream
+aws-c-http
+aws-c-io
+aws-c-mqtt
+aws-c-s3
+aws-c-sdkutils
+aws-checksums
+aws-crt-cpp
+aws-sdk-cpp
 awscli
 azure-cli
 bash
@@ -20,6 +34,7 @@ cryptography
 curl
 dav1d
 direnv
+dvc
 elixir
 erlang
 et
@@ -33,6 +48,7 @@ freetype
 frei0r
 fribidi
 fzf
+gcc
 gettext
 gh
 giflib
@@ -43,6 +59,7 @@ gmp
 gnupg
 gnutls
 graphite2
+grpc
 harfbuzz
 helm
 highway
@@ -51,6 +68,7 @@ icu4c@77
 imagemagick
 imath
 ipfs
+isl
 jasper
 jpeg-turbo
 jpeg-xl
@@ -75,6 +93,7 @@ libksba
 liblinear
 liblqr
 libmicrohttpd
+libmpc
 libnghttp2
 libogg
 libomp
@@ -106,6 +125,7 @@ libxext
 libxrender
 libyaml
 little-cms2
+llvm
 lpeg
 lua
 luajit
@@ -119,6 +139,7 @@ mbedtls
 minikube
 mosh
 mpdecimal
+mpfr
 mpg123
 ncdu
 ncurses
@@ -127,7 +148,9 @@ nettle
 nmap
 node
 npth
+numpy
 ollama
+openblas
 opencore-amr
 openexr
 openjpeg
@@ -148,11 +171,13 @@ prettier
 protobuf
 pv
 pycparser
+pygit2
 python@3.12
 python@3.13
 qpdf
 rav1e
 rclone
+re2
 readline
 ripgrep
 rtmpdump
@@ -169,6 +194,7 @@ svt-av1
 telnet
 tesseract
 theora
+thrift
 tig
 tlrc
 tmux
@@ -190,6 +216,7 @@ xvid
 xz
 yazi
 yt-dlp
+z3
 zeromq
 zimg
 zoxide

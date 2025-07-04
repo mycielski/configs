@@ -10,6 +10,7 @@ brew "azure-cli"
 brew "btop"
 brew "chroma"
 brew "direnv"
+brew "dvc"
 brew "elixir"
 brew "eza"
 brew "fd"
@@ -107,6 +108,7 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Vimlike", id: 1584519802
 mas "Xcode", id: 497799835
+vscode "anysphere.remote-containers"
 vscode "ms-python.black-formatter"
 vscode "ms-python.debugpy"
 vscode "ms-python.pylint"
