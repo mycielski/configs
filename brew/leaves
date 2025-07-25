@@ -5,13 +5,16 @@ browsh-org/browsh/browsh
 btop
 chroma
 cmake
+codex
 direnv
+docker-compose
 dvc
 elixir
 eza
 fd
 ffmpeg
 fzf
+gemini-cli
 gh
 git-crypt
 git-lfs
@@ -35,8 +38,7 @@ opentofu
 pandoc
 pinentry-mac
 pkgconf
-podman
-poetry
+podman-compose
 prettier
 pv
 qpdf

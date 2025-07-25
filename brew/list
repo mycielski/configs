@@ -30,10 +30,12 @@ cffi
 chroma
 cjson
 cmake
+codex
 cryptography
 curl
 dav1d
 direnv
+docker-compose
 dvc
 elixir
 erlang
@@ -49,6 +51,7 @@ frei0r
 fribidi
 fzf
 gcc
+gemini-cli
 gettext
 gh
 giflib
@@ -166,7 +169,7 @@ pinentry-mac
 pixman
 pkgconf
 podman
-poetry
+podman-compose
 prettier
 protobuf
 pv
@@ -209,6 +212,7 @@ watch
 webp
 wget
 wxwidgets
+wxwidgets@3.2
 x264
 x265
 xorgproto
@@ -231,8 +235,10 @@ capcut
 chromedriver
 corretto@11
 cursor
+docker-desktop
 element
 firefox
+gcloud-cli
 gimp
 google-chrome
 google-cloud-sdk

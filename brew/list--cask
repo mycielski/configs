@@ -8,8 +8,10 @@ capcut
 chromedriver
 corretto@11
 cursor
+docker-desktop
 element
 firefox
+gcloud-cli
 gimp
 google-chrome
 google-cloud-sdk
