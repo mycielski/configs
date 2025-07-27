@@ -234,3 +234,6 @@ eval "$(zoxide init zsh --cmd j)"
 # fzf shell integration #
 #########################
 source <(fzf --zsh)
+
+# Added by Windsurf
+export PATH="/Users/tmyciels/.codeium/windsurf/bin:$PATH"
