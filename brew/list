@@ -56,6 +56,7 @@ gettext
 gh
 giflib
 git-crypt
+git-graph
 git-lfs
 glib
 gmp
@@ -98,6 +99,8 @@ liblqr
 libmicrohttpd
 libmpc
 libnghttp2
+libnghttp3
+libngtcp2
 libogg
 libomp
 libpng
@@ -189,6 +192,7 @@ sdl2
 shared-mime-info
 shellcheck
 shfmt
+simdjson
 snappy
 speex
 sqlite
@@ -230,6 +234,7 @@ anki
 audacity
 aws-vpn-client
 basictex
+blender
 burp-suite
 capcut
 chromedriver

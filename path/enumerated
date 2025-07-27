@@ -1,6 +1,9 @@
 /Library/TeX/texbin
 /System/Cryptexes/App/usr/bin
 /System/Cryptexes/App/usr/bin/safaridriver
+/Users/tmyciels/.codeium/windsurf/bin
+/Users/tmyciels/.codeium/windsurf/bin/surf
+/Users/tmyciels/.codeium/windsurf/bin/windsurf
 /Users/tmyciels/Library/Application Support/JetBrains/Toolbox/scripts
 /Users/tmyciels/Library/Application Support/JetBrains/Toolbox/scripts/pycharm
 /bin
@@ -80,6 +83,7 @@
 /opt/homebrew/bin/benchmark_xl
 /opt/homebrew/bin/bisect-create
 /opt/homebrew/bin/bjoentegaard
+/opt/homebrew/bin/blender
 /opt/homebrew/bin/bomtool
 /opt/homebrew/bin/bq
 /opt/homebrew/bin/brew
@@ -256,6 +260,7 @@
 /opt/homebrew/bin/gio-querymodules
 /opt/homebrew/bin/git-credential-gcloud
 /opt/homebrew/bin/git-crypt
+/opt/homebrew/bin/git-graph
 /opt/homebrew/bin/git-lfs
 /opt/homebrew/bin/git2
 /opt/homebrew/bin/glib-compile-resources

@@ -17,6 +17,7 @@ fzf
 gemini-cli
 gh
 git-crypt
+git-graph
 git-lfs
 gnupg
 helm
