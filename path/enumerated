@@ -494,6 +494,7 @@
 /opt/homebrew/bin/podman-compose
 /opt/homebrew/bin/podman-mac-helper
 /opt/homebrew/bin/podman-remote
+/opt/homebrew/bin/posting
 /opt/homebrew/bin/postprocessing_benchmark
 /opt/homebrew/bin/ppm2tiff
 /opt/homebrew/bin/pq_to_hlg
@@ -632,7 +633,6 @@
 /opt/homebrew/bin/transicc
 /opt/homebrew/bin/trasher
 /opt/homebrew/bin/tree
-/opt/homebrew/bin/tree-sitter
 /opt/homebrew/bin/trust
 /opt/homebrew/bin/typer
 /opt/homebrew/bin/udp_proxy
