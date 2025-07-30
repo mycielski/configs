@@ -173,6 +173,7 @@ pixman
 pkgconf
 podman
 podman-compose
+posting
 prettier
 protobuf
 pv
