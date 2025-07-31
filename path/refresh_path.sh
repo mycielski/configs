@@ -24,8 +24,8 @@ wait
 		if [[ -n $(git status --short .) ]]; then
 			echo "$0 >> Commiting configs to git" &&
 				git add enumerated &&
-				git add path
-			git commit -S -m "chore: refresh \$PATH data" &&
+				git add path &&
+				git commit -S -m "chore: refresh \$PATH data" &&
 				echo "$0 >> Changes commited"
 		else
 			echo "$0 >> Configs already up-to-date in remote"
