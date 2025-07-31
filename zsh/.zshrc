@@ -154,6 +154,15 @@ alias wget="wget -c --tries=0 --read-timeout=30 --waitretry=10"
 # upgrade all #
 ###############
 upgrade() {
+	# Locking mechanism to prevent parallel invocations of upgrade()
+	lock_dir="/tmp/system_upgrade.lock"
+	# $ mkdir is atomic :D
+	if ! mkdir "$lock_dir" 2>/dev/null; then
+		echo "$0 !! Upgrade is already in progress. Exiting." >&2
+		return 1
+	fi
+	trap 'rmdir "$lock_dir"' 0 2 15
+
 	local job_status=0
 
 	# upgrade packages
