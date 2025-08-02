@@ -46,7 +46,6 @@ prettier
 pv
 qpdf
 rclone
-ripgrep
 shellcheck
 shfmt
 telnet
