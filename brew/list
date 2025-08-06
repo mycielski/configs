@@ -19,6 +19,7 @@ aws-sdk-cpp
 awscli
 azure-cli
 bash
+bat
 brotli
 browsh
 btop
@@ -157,6 +158,7 @@ node
 npth
 numpy
 ollama
+oniguruma
 openblas
 opencore-amr
 openexr
