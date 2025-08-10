@@ -263,6 +263,7 @@
 /opt/homebrew/bin/git-graph
 /opt/homebrew/bin/git-lfs
 /opt/homebrew/bin/git2
+/opt/homebrew/bin/gitui
 /opt/homebrew/bin/glib-compile-resources
 /opt/homebrew/bin/glib-compile-schemas
 /opt/homebrew/bin/glib-genmarshal
@@ -332,6 +333,7 @@
 /opt/homebrew/bin/idn2
 /opt/homebrew/bin/iex
 /opt/homebrew/bin/imagetops
+/opt/homebrew/bin/imessage-exporter
 /opt/homebrew/bin/img2webp
 /opt/homebrew/bin/imgcmp
 /opt/homebrew/bin/imginfo
