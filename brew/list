@@ -59,6 +59,7 @@ giflib
 git-crypt
 git-graph
 git-lfs
+gitui
 glib
 gmp
 gnupg
@@ -73,6 +74,7 @@ hyperfine
 icu4c@77
 imagemagick
 imath
+imessage-exporter
 ipfs
 isl
 jasper
