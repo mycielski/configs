@@ -17,3 +17,7 @@ Settings $\rightarrow$ Keyboard $\rightarrow$ Keyboard Shortcuts... $\rightarrow
 ### Remove from dock
 
 Settings $\rightarrow$ Desktop & Dock $\rightarrow$ Dock settings $\rightarrow$ Show suggested and recent apps in Dock $\rightarrow$ Off
+
+### Disable Command + M shortcut
+
+Settings $\rightarrow$ Keyboard $\rightarrow$ Keyboard shortcuts $\rightarrow$ App Shortcuts $\rightarrow$ All Applications $\rightarrow$ Minimize $\rightarrow$ Set to something weird you'll never press like ⌃⌥⌘M
