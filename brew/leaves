@@ -7,6 +7,7 @@ btop
 chroma
 cmake
 codex
+coreutils
 direnv
 docker-compose
 dvc
@@ -40,6 +41,7 @@ neovim
 nmap
 ollama
 opentofu
+otel-cli
 pandoc
 pinentry-mac
 pkgconf
@@ -51,6 +53,7 @@ qpdf
 rclone
 shellcheck
 shfmt
+socat
 telnet
 tig
 tlrc

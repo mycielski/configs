@@ -32,6 +32,7 @@ chroma
 cjson
 cmake
 codex
+coreutils
 cryptography
 curl
 dav1d
@@ -168,6 +169,7 @@ openjpeg
 openssl@3
 opentofu
 opus
+otel-cli
 p11-kit
 pandoc
 pango
@@ -200,6 +202,7 @@ shellcheck
 shfmt
 simdjson
 snappy
+socat
 speex
 sqlite
 srt
