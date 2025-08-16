@@ -7,7 +7,7 @@
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+ source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 # If you come from bash you might have to change your $PATH.
@@ -84,14 +84,14 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	colored-man-pages     # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colored-man-pages
-	dircycle              # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/dircycle
-	direnv                # https://github.com/direnv/direnv
-	eza                   # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/eza
-	gcloud                # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gcloud
-	git-auto-fetch        # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git-auto-fetch
-	git                   # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
-	gitignore             # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gitignore
+	colored-man-pages # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colored-man-pages
+	dircycle          # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/dircycle
+	direnv            # https://github.com/direnv/direnv
+	eza               # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/eza
+	gcloud            # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gcloud
+	git-auto-fetch    # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git-auto-fetch
+	git               # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git
+	gitignore         # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gitignore
 	# globalias             # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/globalias
 	ipfs                  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/ipfs
 	macos                 # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/macos
