@@ -183,7 +183,8 @@ upgrade() {
 	# remove .DS_Store
 	(
 		local dsstore_status=0
-		for dir in "$HOME/Desktop" "$HOME/Documents" "$HOME/Downloads"; do
+		# "$HOME/Desktop" used to be part of this list but it froze the script
+		for dir in "$HOME/Documents" "$HOME/Downloads"; do
 			if [ -d "$dir" ]; then
 				cd "$dir" &&
 					echo "$0 >> Removing .DS_Store from $dir" &&
