@@ -215,7 +215,8 @@ upgrade() {
 	direnv prune || job_status=$(($job_status + 40))
 
 	echo "$0 >> Backing up configs to git"
-	(sh "$HOME/Desktop/configs/refresh.sh" || job_status=$(($job_status + 4)))
+	(cd "$HOME/Desktop/configs/" && git fetch --quiet && test -z "$(git log HEAD..@{u})" || job_status=$(($job_status + 4)) && false) && 
+	(sh "$HOME/Desktop/configs/refresh.sh" || job_status=$(($job_status + 100)))
 
 	echo "$0 >> All done!"
 
