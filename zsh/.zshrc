@@ -154,14 +154,6 @@ alias wget="wget -c --tries=0 --read-timeout=30 --waitretry=10"
 # upgrade all #
 ###############
 upgrade() {
-    # Locking mechanism
-    local lock_dir="/tmp/system_upgrade.lock"
-    if ! mkdir "$lock_dir" 2>/dev/null; then
-        echo "$0 !! Upgrade is already in progress. Exiting." >&2
-        return 255 # A special code for "cannot even start"
-    fi
-    trap 'rmdir "$lock_dir"' EXIT
-
     # --- Define Error Codes using Powers of Two ---
     local ERR_PACKAGES=1
     local ERR_DSSTORE=2
@@ -224,6 +216,9 @@ upgrade() {
     else
         echo "$0 !! Some steps failed during system upgrade. Exit code: $job_status"
     fi
+
+    rmdir "$lock_dir"
+
     return $job_status
 }
 
