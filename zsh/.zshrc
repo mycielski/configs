@@ -160,8 +160,7 @@ upgrade() {
         echo "$0 !! Upgrade is already in progress. Exiting." >&2
         return 1
     fi
-    # Use EXIT to ensure the lock is always removed
-    trap 'rmdir "$lock_dir"' EXIT
+    trap 'rmdir "$lock_dir"' 0 2 15
 
     # --- Define Error Codes using Powers of Two ---
     local ERR_PACKAGES=1
