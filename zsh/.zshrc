@@ -154,80 +154,71 @@ alias wget="wget -c --tries=0 --read-timeout=30 --waitretry=10"
 # upgrade all #
 ###############
 upgrade() {
-    # Locking mechanism to prevent parallel invocations
-    local lock_dir="/tmp/system_upgrade.lock"
-    if ! mkdir "$lock_dir" 2>/dev/null; then
-        echo "$0 !! Upgrade is already in progress. Exiting." >&2
-        return 1
-    fi
-    trap 'rmdir "$lock_dir"' 0 2 15
+	# Locking mechanism to prevent parallel invocations of upgrade()
+	lock_dir="/tmp/system_upgrade.lock"
+	# $ mkdir is atomic :D
+	if ! mkdir "$lock_dir" 2>/dev/null; then
+		echo "$0 !! Upgrade is already in progress. Exiting." >&2
+		return 1
+	fi
+	trap 'rmdir "$lock_dir"' 0 2 15
 
-    # --- Define Error Codes using Powers of Two ---
-    local ERR_PACKAGES=1
-    local ERR_DSSTORE=2
-    local ERR_GIT_REMOTE=4
-    local ERR_GIT_BACKUP=8
-    local ERR_TLDR=16
-    local ERR_TRASH=32
-    local ERR_DIRENV=64
+	local job_status=0
 
-    local job_status=0
+	# upgrade packages
+	(
+		echo "$0 >> Updating brew repo" &&
+			brew update &&
+			echo "$0 >> Upgrading brew packages" &&
+			brew upgrade &&
+			echo "$0 >> Upgrading App Store packages" &&
+			mas upgrade &&
+			echo "$0 >> Removing dangling packages" &&
+			brew autoremove &&
+			echo "$0 >> Cleaning up" &&
+			brew cleanup &&
+			echo "$0 >> App updates finished!"
+	) || (echo "$0 !! Failed to upgrade packages" && job_status=$(($job_status + 1)))
 
-    # --- Upgrade Packages ---
-    (
-        echo "$0 >> Updating brew repo, packages, and apps..."
-        brew update && brew upgrade && mas upgrade && brew autoremove && brew cleanup
-    ) || {
-        echo "$0 !! Failed to upgrade packages" >&2
-        # Use bitwise OR to add the error flag
-        ((job_status |= ERR_PACKAGES))
-    }
+	# remove .DS_Store
+	(
+		local dsstore_status=0
+		for dir in "$HOME/Desktop" "$HOME/Documents" "$HOME/Downloads"; do
+			if [ -d "$dir" ]; then
+				cd "$dir" &&
+					echo "$0 >> Removing .DS_Store from $dir" &&
+					rmdsstore 2>/dev/null ||
+					(echo "$0 !! Failed to remove .DS_Store from $dir" &&
+						dsstore_status=1)
+			else
+				echo "$0 !! Skipping non-existent directory: $dir" >&2
+			fi
+		done
 
-    # --- Remove .DS_Store ---
-    (
-        echo "$0 >> Removing .DS_Store files..."
-        find "$HOME/Documents" "$HOME/Downloads" -name ".DS_Store" -delete
-    ) || {
-        echo "$0 !! Failed to remove .DS_Store files" >&2
-        ((job_status |= ERR_DSSTORE))
-    }
+		echo "$0 >> .DS_Store removal finished!"
+		job_status=$(($job_status + 2 * $dsstore_status))
+	)
 
-    # --- Update Other Tools ---
-    echo "$0 >> Updating tldr database"
-    tldr --update || ((job_status |= ERR_TLDR))
+	echo "$0 >> Updating tldr database"
+	tldr --update || job_status=$(($job_status + 10))
 
-    echo "$0 >> Emptying trash"
-    osascript -e 'tell application "Finder" to empty trash' || ((job_status |= ERR_TRASH))
+	echo "$0 >> Emptying trash"
+	osascript -e '''tell application "Finder"
+		set trashItemCount to count of items in trash
+		if trashItemCount > 1 then
+			empty trash
+		end if
+	end tell''' || job_status=$(($job_status + 20))
 
-    echo "$0 >> Pruning direnv"
-    direnv prune || ((job_status |= ERR_DIRENV))
+	echo "$0 >> Pruning direnv"
+	direnv prune || job_status=$(($job_status + 40))
 
-    # --- Backing up Configs to Git ---
-    echo "$0 >> Backing up configs to git"
-    local config_dir="$HOME/Desktop/configs"
+	echo "$0 >> Backing up configs to git"
+	(sh "$HOME/Desktop/configs/refresh.sh" || job_status=$(($job_status + 4)))
 
-    # Safely check branch and remote status in one go
-    if (cd "$config_dir" && git checkout macos && git fetch --quiet && test -z "$(git log HEAD..@{u})"); then
-        echo "$0 >> Config repo is on 'macos' and up-to-date. Running backup."
-        sh "$config_dir/refresh.sh" || {
-            echo "$0 !! Config backup script failed" >&2
-            ((job_status |= ERR_GIT_BACKUP))
-        }
-    else
-        echo "$0 !! Config repo has remote changes or checkout failed, skipping backup." >&2
-        ((job_status |= ERR_GIT_REMOTE))
-    fi
+	echo "$0 >> All done!"
 
-    # --- Final Status ---
-    if (( job_status == 0 )); then
-        echo "$0 >> All done! System upgrade completed successfully."
-    else
-        echo "$0 !! Some steps failed during system upgrade. Exit code: $job_status"
-    fi
-
-    rmdir "$lock_dir"
-
-    return $job_status
+	return $job_status
 }
 
 ##################
