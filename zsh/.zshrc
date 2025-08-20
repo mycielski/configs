@@ -86,7 +86,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(
 	colored-man-pages # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/colored-man-pages
 	dircycle          # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/dircycle
-	direnv            # https://github.com/direnv/direnv
+	#direnv            # https://github.com/direnv/direnv
 	eza               # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/eza
 	gcloud            # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/gcloud
 	git-auto-fetch    # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/git-auto-fetch
@@ -114,6 +114,7 @@ source $ZSH/oh-my-zsh.sh
 # environment variables #
 #########################
 export RCLONE_FAST_LIST=1
+export GIT_PAGER=cat
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
