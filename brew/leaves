@@ -10,6 +10,7 @@ codex
 coreutils
 direnv
 docker-compose
+duckdb
 dvc
 elixir
 eza
@@ -43,6 +44,7 @@ ollama
 opentofu
 otel-cli
 pandoc
+parallel
 pinentry-mac
 pkgconf
 podman-compose
@@ -51,6 +53,7 @@ prettier
 pv
 qpdf
 rclone
+serie
 shellcheck
 shfmt
 socat

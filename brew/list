@@ -38,6 +38,7 @@ curl
 dav1d
 direnv
 docker-compose
+duckdb
 dvc
 elixir
 erlang
@@ -173,6 +174,7 @@ otel-cli
 p11-kit
 pandoc
 pango
+parallel
 pcre2
 pinentry
 pinentry-mac
@@ -197,6 +199,7 @@ ripgrep
 rtmpdump
 rubberband
 sdl2
+serie
 shared-mime-info
 shellcheck
 shfmt
@@ -239,6 +242,7 @@ zimg
 zoxide
 zstd
 alacritty
+anki
 audacity
 aws-vpn-client
 basictex
