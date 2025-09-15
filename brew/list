@@ -28,6 +28,7 @@ ca-certificates
 cairo
 certifi
 cffi
+chafa
 chroma
 cjson
 cmake
@@ -44,9 +45,11 @@ elixir
 erlang
 et
 eza
+faad2
 fd
 ffmpeg
 ffmpeg-iina
+fftw
 flac
 fontconfig
 freetype
@@ -54,6 +57,7 @@ frei0r
 fribidi
 fzf
 gcc
+gdk-pixbuf
 gemini-cli
 gettext
 gh
@@ -72,6 +76,8 @@ harfbuzz
 helm
 highway
 htop
+huggingface-cli
+hwloc
 hyperfine
 icu4c@77
 imagemagick
@@ -83,12 +89,14 @@ jasper
 jpeg-turbo
 jpeg-xl
 k9s
+kew
 kubernetes-cli
 lame
 leptonica
 libarchive
 libass
 libassuan
+libavif
 libb2
 libbluray
 libde265
@@ -112,6 +120,7 @@ libomp
 libpng
 libraw
 librist
+librsvg
 libsamplerate
 libsndfile
 libsodium
@@ -121,6 +130,7 @@ libssh2
 libtasn1
 libtiff
 libtool
+libudfread
 libunibreak
 libunistring
 libusb
@@ -149,6 +159,8 @@ m4
 mas
 mbedtls
 minikube
+mongodb-database-tools
+mongosh
 mosh
 mpdecimal
 mpfr
@@ -163,13 +175,16 @@ npth
 numpy
 ollama
 oniguruma
+open-mpi
 openblas
 opencore-amr
 openexr
 openjpeg
+openjph
 openssl@3
 opentofu
 opus
+opusfile
 otel-cli
 p11-kit
 pandoc
@@ -180,6 +195,7 @@ pinentry
 pinentry-mac
 pixman
 pkgconf
+pmix
 podman
 podman-compose
 posting
@@ -195,6 +211,7 @@ rav1e
 rclone
 re2
 readline
+rename
 ripgrep
 rtmpdump
 rubberband
@@ -210,6 +227,7 @@ speex
 sqlite
 srt
 svt-av1
+taglib
 telnet
 tesseract
 theora
@@ -222,8 +240,10 @@ tree-sitter
 unbound
 unibilium
 unixodbc
+utf8cpp
 utf8proc
 uv
+uvwasi
 watch
 webp
 wget
@@ -281,6 +301,7 @@ tailscale-app
 telegram
 tomatobar
 unnaturalscrollwheels
+utm
 vlc
 windsurf
 zed
