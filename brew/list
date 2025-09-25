@@ -99,6 +99,7 @@ libassuan
 libavif
 libb2
 libbluray
+libbs2b
 libde265
 libdeflate
 libevent
@@ -303,5 +304,6 @@ tomatobar
 unnaturalscrollwheels
 utm
 vlc
+whatsapp
 windsurf
 zed

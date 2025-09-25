@@ -125,6 +125,7 @@ cask "tomatobar"
 cask "unnaturalscrollwheels"
 cask "utm"
 cask "vlc"
+cask "whatsapp"
 cask "windsurf"
 cask "zed"
 mas "AdGuard for Safari", id: 1440147259

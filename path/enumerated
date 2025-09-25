@@ -5,6 +5,7 @@
 /Users/tmyciels/.codeium/windsurf/bin/surf
 /Users/tmyciels/.codeium/windsurf/bin/windsurf
 /Users/tmyciels/Library/Application Support/JetBrains/Toolbox/scripts
+/Users/tmyciels/Library/Application Support/JetBrains/Toolbox/scripts/dataspell
 /Users/tmyciels/Library/Application Support/JetBrains/Toolbox/scripts/pycharm
 /bin
 /bin/[
@@ -95,6 +96,8 @@
 /opt/homebrew/bin/brew
 /opt/homebrew/bin/brotli
 /opt/homebrew/bin/browsh
+/opt/homebrew/bin/bs2bconvert
+/opt/homebrew/bin/bs2bstream
 /opt/homebrew/bin/bsondump
 /opt/homebrew/bin/btop
 /opt/homebrew/bin/butteraugli_main
