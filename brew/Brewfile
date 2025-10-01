@@ -128,6 +128,7 @@ cask "vlc"
 cask "whatsapp"
 cask "windsurf"
 cask "zed"
+cask "zoom"
 mas "AdGuard for Safari", id: 1440147259
 mas "Goodnotes", id: 1444383602
 mas "Hush", id: 1544743900
