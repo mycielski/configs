@@ -147,6 +147,7 @@ libxdmcp
 libxext
 libxrender
 libyaml
+libzip
 little-cms2
 llvm
 lpeg
@@ -199,6 +200,7 @@ pkgconf
 pmix
 podman
 podman-compose
+popt
 posting
 prettier
 protobuf
@@ -207,6 +209,7 @@ pycparser
 pygit2
 python@3.12
 python@3.13
+python@3.14
 qpdf
 rav1e
 rclone
@@ -214,6 +217,7 @@ re2
 readline
 rename
 ripgrep
+rsync
 rtmpdump
 rubberband
 sdl2
@@ -248,14 +252,15 @@ uvwasi
 watch
 webp
 wget
-wxwidgets
 wxwidgets@3.2
 x264
 x265
 xorgproto
 xvid
+xxhash
 xz
 yazi
+yq
 yt-dlp
 z3
 zeromq
@@ -281,6 +286,7 @@ google-chrome
 google-cloud-sdk
 google-earth-pro
 jetbrains-toolbox
+josm
 microsoft-auto-update
 microsoft-excel
 microsoft-powerpoint
@@ -304,6 +310,7 @@ telegram
 tomatobar
 unnaturalscrollwheels
 utm
+visual-studio-code
 vlc
 whatsapp
 windsurf
