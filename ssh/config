@@ -1,5 +1,24 @@
 ServerAliveInterval 60
 
+Host 57.128.195.126
+	HostName 57.128.195.126
+	User krystian
+	
+Host 31.22.104.86
+	HostName 31.22.104.86
+	User root
+	IdentityFile ~/.ssh/ideas-datacrunch
+
+Host 135.181.8.219
+	HostName 135.181.8.219
+	User root
+	IdentityFile ~/.ssh/ideas-datacrunch
+
+Host  31.22.104.116
+	HostName  31.22.104.116
+	User root
+	IdentityFile ~/.ssh/ideas-datacrunch
+
 Host github.com
 	User git
 	AddKeysToAgent yes
@@ -14,3 +33,8 @@ Host github.com-zest
 	UseKeychain yes
 	IdentitiesOnly yes
 	IdentityFile ~/.ssh/github_zest
+
+Host github-ideas
+	User git
+	HostName instytut-badawczy-ideas.ghe.com
+	IdentityFile ~/.ssh/ideas
