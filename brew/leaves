@@ -1,3 +1,5 @@
+airbytehq/tap/abctl
+automake
 autossh
 awscli
 azure-cli
@@ -23,6 +25,8 @@ git-crypt
 git-graph
 gitui
 gnupg
+go
+goose
 helm
 htop
 huggingface-cli
@@ -30,6 +34,7 @@ hyperfine
 iina/mpv-iina/ffmpeg-iina
 imagemagick
 imessage-exporter
+img2pdf
 ipfs
 k9s
 kew
@@ -40,6 +45,7 @@ mistertea/et/et
 mongodb/brew/mongodb-database-tools
 mongosh
 mosh
+mysql
 ncdu
 neovim
 nmap
@@ -48,13 +54,15 @@ opentofu
 otel-cli
 pandoc
 parallel
+pgloader
 pinentry-mac
 pkgconf
+pngquant
 podman-compose
+postgresql@14
 posting
 prettier
 pv
-qpdf
 rclone
 rename
 rsync
@@ -70,6 +78,7 @@ tree
 uv
 watch
 wget
+wireguard-tools
 yazi
 yq
 yt-dlp

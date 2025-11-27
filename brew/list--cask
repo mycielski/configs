@@ -8,6 +8,7 @@ capcut
 chromedriver
 corretto@11
 cursor
+dbeaver-community
 docker-desktop
 element
 firefox
@@ -19,6 +20,7 @@ google-earth-pro
 jetbrains-toolbox
 josm
 microsoft-auto-update
+microsoft-edge
 microsoft-excel
 microsoft-powerpoint
 microsoft-word
