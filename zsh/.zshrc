@@ -247,5 +247,10 @@ eval "$(zoxide init zsh --cmd j)"
 #########################
 source <(fzf --zsh)
 
+#################
+# uv tools path #
+#################
+export PATH="/Users/tmyciels/.local/bin:$PATH"
+
 # Added by Windsurf
 export PATH="/Users/tmyciels/.codeium/windsurf/bin:$PATH"
