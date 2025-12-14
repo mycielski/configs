@@ -1,6 +1,9 @@
 /Library/TeX/texbin
 /System/Cryptexes/App/usr/bin
 /System/Cryptexes/App/usr/bin/safaridriver
+/Users/tmyciels/.antigravity/antigravity/bin
+/Users/tmyciels/.antigravity/antigravity/bin/agy
+/Users/tmyciels/.antigravity/antigravity/bin/antigravity
 /Users/tmyciels/.codeium/windsurf/bin
 /Users/tmyciels/.codeium/windsurf/bin/surf
 /Users/tmyciels/.codeium/windsurf/bin/windsurf
@@ -63,6 +66,7 @@
 /opt/homebrew/bin/aclocal
 /opt/homebrew/bin/aclocal-1.18
 /opt/homebrew/bin/adig
+/opt/homebrew/bin/agy
 /opt/homebrew/bin/ahost
 /opt/homebrew/bin/alacritty
 /opt/homebrew/bin/ambiguous_words
@@ -544,7 +548,7 @@
 /opt/homebrew/bin/luac-5.4
 /opt/homebrew/bin/luac5.4
 /opt/homebrew/bin/luajit
-/opt/homebrew/bin/luajit-2.1.1763318511
+/opt/homebrew/bin/luajit-2.1.1765228720
 /opt/homebrew/bin/lynx
 /opt/homebrew/bin/lz4
 /opt/homebrew/bin/lz4c
@@ -770,13 +774,13 @@
 /opt/homebrew/bin/probetest
 /opt/homebrew/bin/procan
 /opt/homebrew/bin/protoc
-/opt/homebrew/bin/protoc-33.1.0
+/opt/homebrew/bin/protoc-33.2.0
 /opt/homebrew/bin/protoc-gen-upb
-/opt/homebrew/bin/protoc-gen-upb-33.1.0
+/opt/homebrew/bin/protoc-gen-upb-33.2.0
 /opt/homebrew/bin/protoc-gen-upb_minitable
-/opt/homebrew/bin/protoc-gen-upb_minitable-33.1.0
+/opt/homebrew/bin/protoc-gen-upb_minitable-33.2.0
 /opt/homebrew/bin/protoc-gen-upbdefs
-/opt/homebrew/bin/protoc-gen-upbdefs-33.1.0
+/opt/homebrew/bin/protoc-gen-upbdefs-33.2.0
 /opt/homebrew/bin/prte
 /opt/homebrew/bin/prte-term
 /opt/homebrew/bin/prte_info
@@ -944,6 +948,8 @@
 /opt/homebrew/bin/wireguard-go
 /opt/homebrew/bin/wordlist2dawg
 /opt/homebrew/bin/wrjpgcom
+/opt/homebrew/bin/wx-config-3.2
+/opt/homebrew/bin/wxrc-3.2
 /opt/homebrew/bin/x264
 /opt/homebrew/bin/x265
 /opt/homebrew/bin/xgettext

@@ -254,3 +254,6 @@ export PATH="/Users/tmyciels/.local/bin:$PATH"
 
 # Added by Windsurf
 export PATH="/Users/tmyciels/.codeium/windsurf/bin:$PATH"
+
+# Added by Antigravity
+export PATH="/Users/tmyciels/.antigravity/antigravity/bin:$PATH"

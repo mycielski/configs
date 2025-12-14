@@ -1,24 +1,31 @@
 ServerAliveInterval 60
 
-Host 57.128.195.126
+Host extract-main
+	HostName 95.133.252.16
+	IdentityFile ~/.ssh/ideas-datacrunch
+	User root
+
+Host zoeller
+	HostName 168.119.16.203
+	IdentityFile ~/.ssh/ccveex
+	Port 14097
+
+Host ccveex-jumphost
+	HostName 51.38.143.129
+	User debian
+	IdentityFile ~/.ssh/ccveex
+
+Host zoeller-no-vpn
+	HostName 168.119.16.203
+	Port 14097
+	IdentityFile ~/.ssh/ccveex
+	ProxyJump ccveex-jumphost
+
+Host ccveex-krysitan
 	HostName 57.128.195.126
 	User krystian
+	IdentityFile ~/.ssh/ccveex
 	
-Host 31.22.104.86
-	HostName 31.22.104.86
-	User root
-	IdentityFile ~/.ssh/ideas-datacrunch
-
-Host 135.181.8.219
-	HostName 135.181.8.219
-	User root
-	IdentityFile ~/.ssh/ideas-datacrunch
-
-Host  31.22.104.116
-	HostName  31.22.104.116
-	User root
-	IdentityFile ~/.ssh/ideas-datacrunch
-
 Host github.com
 	User git
 	AddKeysToAgent yes
