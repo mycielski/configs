@@ -98,6 +98,7 @@ brew "mistertea/et/et"
 brew "mongodb/brew/mongodb-database-tools"
 cask "alacritty"
 cask "anki"
+cask "antigravity"
 cask "audacity"
 cask "aws-vpn-client"
 cask "basictex"
@@ -109,6 +110,7 @@ cask "cursor"
 cask "dbeaver-community"
 cask "docker-desktop"
 cask "element"
+cask "epic-games"
 cask "firefox"
 cask "gcloud-cli"
 cask "gimp"
@@ -124,7 +126,6 @@ cask "microsoft-word"
 cask "moonlight"
 cask "mullvad-vpn"
 cask "nordvpn"
-cask "philips-hue-sync"
 cask "qbittorrent"
 cask "raspberry-pi-imager"
 cask "raycast"
@@ -152,7 +153,6 @@ mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Vimlike", id: 1584519802
-mas "WireGuard", id: 1451685025
 mas "Xcode", id: 497799835
 vscode "github.copilot"
 vscode "github.copilot-chat"
