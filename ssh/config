@@ -5,6 +5,16 @@ Host extract-main
 	IdentityFile ~/.ssh/ideas-datacrunch
 	User root
 
+Host ideas-temp
+	HostName 95.133.252.146
+	IdentityFile ~/.ssh/ideas-datacrunch
+	User root
+
+Host ideas-temp-2
+	HostName 95.133.252.147
+	IdentityFile ~/.ssh/ideas-datacrunch
+	User root
+
 Host zoeller
 	HostName 168.119.16.203
 	IdentityFile ~/.ssh/ccveex
@@ -21,7 +31,7 @@ Host zoeller-no-vpn
 	IdentityFile ~/.ssh/ccveex
 	ProxyJump ccveex-jumphost
 
-Host ccveex-krysitan
+Host ccveex-krystian
 	HostName 57.128.195.126
 	User krystian
 	IdentityFile ~/.ssh/ccveex
