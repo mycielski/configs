@@ -219,6 +219,9 @@ upgrade() {
 	echo "$0 >> Backing up configs to git"
 	(sh "$HOME/Desktop/configs/refresh.sh" || job_status=$(($job_status + 4)))
 
+	echo "$0 >> Updating lazy nvim"
+	nvim --headless "+Lazy! sync" +qa || job_status=$(($job_status + 100))
+
 	echo "$0 >> All done!"
 
 	return $job_status
