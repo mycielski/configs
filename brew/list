@@ -3,6 +3,7 @@ abseil
 aom
 apache-arrow
 aribb24
+augeas
 autoconf
 automake
 autossh
@@ -29,6 +30,7 @@ btop
 c-ares
 ca-certificates
 cairo
+certbot
 certifi
 cffi
 chafa
@@ -317,6 +319,7 @@ microsoft-auto-update
 microsoft-edge
 microsoft-excel
 microsoft-powerpoint
+microsoft-teams
 microsoft-word
 moonlight
 mullvad-vpn
