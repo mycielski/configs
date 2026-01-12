@@ -1,4 +1,4 @@
-ServerAliveInterval 60
+ServerAliveInterval 15
 
 
 Host extract-main
@@ -18,6 +18,7 @@ Host extract-temp-worker
 
 Host zoeller
 	HostName 168.119.16.203
+	User root
 	IdentityFile ~/.ssh/ccveex
 	Port 14097
 
@@ -28,6 +29,7 @@ Host ccveex-jumphost
 
 Host zoeller-no-vpn
 	HostName 168.119.16.203
+	User root
 	Port 14097
 	IdentityFile ~/.ssh/ccveex
 	ProxyJump ccveex-jumphost

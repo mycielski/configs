@@ -76,6 +76,10 @@
 /opt/homebrew/bin/asn1Coding
 /opt/homebrew/bin/asn1Decoding
 /opt/homebrew/bin/asn1Parser
+/opt/homebrew/bin/augmatch
+/opt/homebrew/bin/augparse
+/opt/homebrew/bin/augprint
+/opt/homebrew/bin/augtool
 /opt/homebrew/bin/autoconf
 /opt/homebrew/bin/autoheader
 /opt/homebrew/bin/autom4te
@@ -121,6 +125,7 @@
 /opt/homebrew/bin/c_rehash
 /opt/homebrew/bin/cairo-trace
 /opt/homebrew/bin/ccmake
+/opt/homebrew/bin/certbot
 /opt/homebrew/bin/chafa
 /opt/homebrew/bin/chroma
 /opt/homebrew/bin/chromedriver
@@ -233,6 +238,7 @@
 /opt/homebrew/bin/f2py
 /opt/homebrew/bin/faad
 /opt/homebrew/bin/factor
+/opt/homebrew/bin/fadot
 /opt/homebrew/bin/fax2ps
 /opt/homebrew/bin/fax2tiff
 /opt/homebrew/bin/fc-cache
@@ -548,7 +554,7 @@
 /opt/homebrew/bin/luac-5.4
 /opt/homebrew/bin/luac5.4
 /opt/homebrew/bin/luajit
-/opt/homebrew/bin/luajit-2.1.1765228720
+/opt/homebrew/bin/luajit-2.1.1767980792
 /opt/homebrew/bin/lynx
 /opt/homebrew/bin/lz4
 /opt/homebrew/bin/lz4c
