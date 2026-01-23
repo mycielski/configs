@@ -7,7 +7,7 @@ Host extract-main
 	User root
 
 Host extract-temp-main
-	HostName 95.133.252.19
+	HostName 95.133.252.90
 	IdentityFile ~/.ssh/ideas-datacrunch
 	User root
 
@@ -45,14 +45,6 @@ Host github.com
 	UseKeychain yes
 	IdentitiesOnly yes
 	IdentityFile ~/.ssh/github_mycielski
-
-Host github.com-zest
-	User git
-	HostName github.com
-	AddKeysToAgent yes
-	UseKeychain yes
-	IdentitiesOnly yes
-	IdentityFile ~/.ssh/github_zest
 
 Host github-ideas
 	User git
