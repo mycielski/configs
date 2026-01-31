@@ -1,10 +1,8 @@
-airbytehq/tap/abctl
 automake
 autossh
 awscli
 azure-cli
 bat
-browsh-org/browsh/browsh
 btop
 certbot
 chroma
@@ -26,7 +24,6 @@ git-crypt
 git-graph
 gitui
 gnupg
-go
 goose
 helm
 htop
@@ -43,8 +40,7 @@ lynx
 mas
 minikube
 mistertea/et/et
-mongodb/brew/mongodb-database-tools
-mongosh
+mole
 mosh
 mysql
 ncdu
