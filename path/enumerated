@@ -1,16 +1,11 @@
 /Library/TeX/texbin
 /System/Cryptexes/App/usr/bin
 /System/Cryptexes/App/usr/bin/safaridriver
-/Users/tmyciels/.antigravity/antigravity/bin
-/Users/tmyciels/.antigravity/antigravity/bin/agy
-/Users/tmyciels/.antigravity/antigravity/bin/antigravity
 /Users/tmyciels/.codeium/windsurf/bin
 /Users/tmyciels/.codeium/windsurf/bin/surf
 /Users/tmyciels/.codeium/windsurf/bin/windsurf
 /Users/tmyciels/.local/bin
 /Users/tmyciels/Library/Application Support/JetBrains/Toolbox/scripts
-/Users/tmyciels/Library/Application Support/JetBrains/Toolbox/scripts/dataspell
-/Users/tmyciels/Library/Application Support/JetBrains/Toolbox/scripts/pycharm
 /bin
 /bin/[
 /bin/bash
@@ -61,11 +56,10 @@
 /opt/homebrew/bin/aarch64-apple-darwin24-gcc-nm-15
 /opt/homebrew/bin/aarch64-apple-darwin24-gcc-ranlib-15
 /opt/homebrew/bin/aarch64-apple-darwin24-gfortran-15
-/opt/homebrew/bin/abctl
 /opt/homebrew/bin/aclocal
 /opt/homebrew/bin/aclocal-1.18
+/opt/homebrew/bin/adaparse
 /opt/homebrew/bin/adig
-/opt/homebrew/bin/agy
 /opt/homebrew/bin/ahost
 /opt/homebrew/bin/alacritty
 /opt/homebrew/bin/animate
@@ -111,10 +105,8 @@
 /opt/homebrew/bin/bq
 /opt/homebrew/bin/brew
 /opt/homebrew/bin/brotli
-/opt/homebrew/bin/browsh
 /opt/homebrew/bin/bs2bconvert
 /opt/homebrew/bin/bs2bstream
-/opt/homebrew/bin/bsondump
 /opt/homebrew/bin/bsqldb
 /opt/homebrew/bin/bsqlodbc
 /opt/homebrew/bin/btop
@@ -149,14 +141,12 @@
 /opt/homebrew/bin/crypto_bench
 /opt/homebrew/bin/ct_run
 /opt/homebrew/bin/ctest
-/opt/homebrew/bin/cursor
 /opt/homebrew/bin/curve_keygen
 /opt/homebrew/bin/cwebp
 /opt/homebrew/bin/cws2fws
 /opt/homebrew/bin/danetool
 /opt/homebrew/bin/datacopy
 /opt/homebrew/bin/dav1d
-/opt/homebrew/bin/dbeaver
 /opt/homebrew/bin/decode_and_encode
 /opt/homebrew/bin/defncopy
 /opt/homebrew/bin/deno
@@ -367,10 +357,8 @@
 /opt/homebrew/bin/gnutls-cli
 /opt/homebrew/bin/gnutls-cli-debug
 /opt/homebrew/bin/gnutls-serv
-/opt/homebrew/bin/go
 /opt/homebrew/bin/gobject-query
 /opt/homebrew/bin/god
-/opt/homebrew/bin/gofmt
 /opt/homebrew/bin/goose
 /opt/homebrew/bin/gpaste
 /opt/homebrew/bin/gpathchk
@@ -555,15 +543,11 @@
 /opt/homebrew/bin/minikube
 /opt/homebrew/bin/missing_codec_desc
 /opt/homebrew/bin/mix
+/opt/homebrew/bin/mlx.distributed_config
+/opt/homebrew/bin/mlx.launch
+/opt/homebrew/bin/mo
 /opt/homebrew/bin/mogrify
-/opt/homebrew/bin/mongodump
-/opt/homebrew/bin/mongoexport
-/opt/homebrew/bin/mongofiles
-/opt/homebrew/bin/mongoimport
-/opt/homebrew/bin/mongorestore
-/opt/homebrew/bin/mongosh
-/opt/homebrew/bin/mongostat
-/opt/homebrew/bin/mongotop
+/opt/homebrew/bin/mole
 /opt/homebrew/bin/montage
 /opt/homebrew/bin/mosh
 /opt/homebrew/bin/mosh-client
@@ -592,6 +576,7 @@
 /opt/homebrew/bin/msggrep
 /opt/homebrew/bin/msginit
 /opt/homebrew/bin/msgmerge
+/opt/homebrew/bin/msgpre
 /opt/homebrew/bin/msgunfmt
 /opt/homebrew/bin/msguniq
 /opt/homebrew/bin/murge
@@ -733,6 +718,7 @@
 /opt/homebrew/bin/png-fix-itxt
 /opt/homebrew/bin/pngfix
 /opt/homebrew/bin/pngquant
+/opt/homebrew/bin/po-fetch
 /opt/homebrew/bin/podman
 /opt/homebrew/bin/podman-compose
 /opt/homebrew/bin/podman-mac-helper
@@ -834,6 +820,7 @@
 /opt/homebrew/bin/source2c
 /opt/homebrew/bin/speexdec
 /opt/homebrew/bin/speexenc
+/opt/homebrew/bin/spit
 /opt/homebrew/bin/sql
 /opt/homebrew/bin/ssimulacra2
 /opt/homebrew/bin/ssimulacra_main
@@ -874,6 +861,8 @@
 /opt/homebrew/bin/transicc
 /opt/homebrew/bin/trasher
 /opt/homebrew/bin/tree
+/opt/homebrew/bin/trietool
+/opt/homebrew/bin/trietool-0.2
 /opt/homebrew/bin/trust
 /opt/homebrew/bin/tsql
 /opt/homebrew/bin/typer
@@ -884,7 +873,6 @@
 /opt/homebrew/bin/unxz
 /opt/homebrew/bin/unzstd
 /opt/homebrew/bin/update-mime-database
-/opt/homebrew/bin/utmctl
 /opt/homebrew/bin/uv
 /opt/homebrew/bin/uvx
 /opt/homebrew/bin/vacuumdb
@@ -903,7 +891,6 @@
 /opt/homebrew/bin/wheel3
 /opt/homebrew/bin/wheel3.13
 /opt/homebrew/bin/wheel3.14
-/opt/homebrew/bin/windsurf
 /opt/homebrew/bin/wireguard-go
 /opt/homebrew/bin/wrjpgcom
 /opt/homebrew/bin/wx-config-3.2
@@ -1981,8 +1968,6 @@
 /usr/local/bin/hub-tool
 /usr/local/bin/kubectl
 /usr/local/bin/kubectl.docker
-/usr/local/bin/mullvad
-/usr/local/bin/mullvad-problem-report
 /usr/sbin
 /usr/sbin/BTLEServer
 /usr/sbin/BTLEServerAgent

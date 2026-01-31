@@ -1,5 +1,9 @@
 ServerAliveInterval 15
 
+Host extract-local-01
+	HostName 10.50.0.101
+	User extract001admin
+	IdentityFile ~/.ssh/ideas-datacrunch
 
 Host extract-main
 	HostName 95.133.252.16
@@ -7,7 +11,7 @@ Host extract-main
 	User root
 
 Host extract-temp-main
-	HostName 95.133.252.90
+	HostName 31.22.104.35
 	IdentityFile ~/.ssh/ideas-datacrunch
 	User root
 

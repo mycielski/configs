@@ -148,7 +148,6 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi="nvim"
-alias vim="nvim"
 alias k="kubectl"
 alias wget="wget -c --tries=0 --read-timeout=30 --waitretry=10"
 # alias docker="podman"
@@ -260,3 +259,4 @@ export PATH="/Users/tmyciels/.codeium/windsurf/bin:$PATH"
 
 # Added by Antigravity
 export PATH="/Users/tmyciels/.antigravity/antigravity/bin:$PATH"
+
