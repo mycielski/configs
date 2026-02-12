@@ -25,6 +25,7 @@ bash
 bat
 brotli
 btop
+bun
 c-ares
 ca-certificates
 cairo
@@ -180,6 +181,7 @@ ncdu
 ncurses
 neovim
 nettle
+nginx
 nmap
 node
 npth
@@ -213,6 +215,7 @@ podman
 podman-compose
 popt
 postgresql@14
+postgresql@17
 posting
 prettier
 protobuf
@@ -232,6 +235,7 @@ ripgrep
 rsync
 rtmpdump
 rubberband
+rust
 sbcl
 sdl2
 serie
@@ -286,6 +290,7 @@ audacity
 basictex
 chromedriver
 corretto@11
+dbeaver-community
 docker-desktop
 element
 firefox
@@ -299,6 +304,7 @@ microsoft-auto-update
 microsoft-teams
 mullvad-vpn
 nordvpn
+pgadmin4
 qbittorrent
 raycast
 rectangle

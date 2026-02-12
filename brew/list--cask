@@ -4,6 +4,7 @@ audacity
 basictex
 chromedriver
 corretto@11
+dbeaver-community
 docker-desktop
 element
 firefox
@@ -17,6 +18,7 @@ microsoft-auto-update
 microsoft-teams
 mullvad-vpn
 nordvpn
+pgadmin4
 qbittorrent
 raycast
 rectangle
