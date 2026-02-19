@@ -3,7 +3,8 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./k3s.nix
+
+    ./kubernetes.nix
 
     ./system/audio.nix
     ./system/bootloader.nix
