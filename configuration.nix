@@ -1,7 +1,3 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
 { config, pkgs, ... }:
 
 {
@@ -12,11 +8,9 @@
       ./gnome.nix
     ];
 
-  # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # Use latest kernel.
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   boot.initrd.luks.devices."luks-3b57e8c2-496e-4cc6-8233-70e7b2165181".device = "/dev/disk/by-uuid/3b57e8c2-496e-4cc6-8233-70e7b2165181";
@@ -24,13 +18,10 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  # Enable networking
   networking.networkmanager.enable = true;
 
-  # Set your time zone.
   time.timeZone = "Asia/Taipei";
 
-  # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
   i18n.extraLocaleSettings = {
@@ -45,22 +36,17 @@
     LC_TIME = "en_GB.UTF-8";
   };
 
-  # Enable the X11 windowing system.
   services.xserver.enable = true;
 
-  # Configure keymap in X11
   services.xserver.xkb = {
     layout = "pl";
     variant = "";
   };
 
-  # Configure console keymap
   console.keyMap = "pl2";
 
-  # Enable CUPS to print documents.
   services.printing.enable = true;
 
-  # Enable sound with pipewire.
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
@@ -70,7 +56,6 @@
     pulse.enable = true;
   };
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.tomaszjm = {
     isNormalUser = true;
     description = "tomaszjm";
