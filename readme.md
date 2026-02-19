@@ -4,4 +4,5 @@
 
 # Various configs store
 - [macOS](/../macos)
+- [NixOS](/../nixos)
 - [JupyterHub](/../jupyterhub)
