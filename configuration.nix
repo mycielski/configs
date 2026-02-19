@@ -8,6 +8,20 @@
       ./gnome.nix
     ];
 
+  system.stateVersion = "25.11";
+
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  console.keyMap = "pl2";
+
+  nixpkgs.config.allowUnfree = true;
+  
+  environment.systemPackages = with pkgs; [
+    vim
+  ];
+
+  environment.variables.EDITOR = "vim";
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -15,8 +29,6 @@
 
   boot.initrd.luks.devices."luks-3b57e8c2-496e-4cc6-8233-70e7b2165181".device = "/dev/disk/by-uuid/3b57e8c2-496e-4cc6-8233-70e7b2165181";
   networking.hostName = "t14";
-
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   networking.networkmanager.enable = true;
 
@@ -43,8 +55,6 @@
     variant = "";
   };
 
-  console.keyMap = "pl2";
-
   services.printing.enable = true;
 
   services.pulseaudio.enable = false;
@@ -61,16 +71,5 @@
     description = "tomaszjm";
     extraGroups = [ "networkmanager" "wheel" ];
   };
-
-  nixpkgs.config.allowUnfree = true;
-
-  environment.systemPackages = with pkgs; [
-    git
-    vim
-  ];
-
-  environment.variables.EDITOR = "vim";
-
-  system.stateVersion = "25.11";
 
 }

@@ -13,6 +13,7 @@
     fd
     file
     fzf
+    git
     htop
     k9s
     kubectl
