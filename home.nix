@@ -8,7 +8,6 @@
     bat
     btop
     bun
-    cloudflared
     curl
     eternal-terminal
     fd
