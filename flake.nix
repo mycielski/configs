@@ -9,18 +9,20 @@
     };
   };
 
-  outputs = inputs@{ nixpkgs, home-manager, ... }: {
-    nixosConfigurations.t14 = nixpkgs.lib.nixosSystem {
-      modules = [
-        ./configuration.nix
- 
-        home-manager.nixosModules.home-manager
-        {
-          home-manager.useGlobalPkgs = true;
-          home-manager.useUserPackages = true;
-          home-manager.users.tomaszjm = import ./home.nix;
-        }
-      ];
+  outputs =
+    inputs@{ nixpkgs, home-manager, ... }:
+    {
+      nixosConfigurations.t14 = nixpkgs.lib.nixosSystem {
+        modules = [
+          ./configuration.nix
+
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.tomaszjm = import ./home.nix;
+          }
+        ];
+      };
     };
-  };
 }

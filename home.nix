@@ -19,6 +19,7 @@
     kubectl
     kubernetes-helm
     neovim
+    nixfmt-tree
     nmap
     pandoc
     podman
@@ -26,6 +27,7 @@
     pv
     rclone
     ripgrep
+    tldr
     tmux
     tree
     uv
