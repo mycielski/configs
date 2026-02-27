@@ -1,4 +1,3 @@
-
 math.randomseed(os.time())
 
 --------------------------------
@@ -45,6 +44,11 @@ vim.cmd("colorscheme " .. "unokai")
 -- uganda --
 ------------
 vim.o.shortmess = vim.o.shortmess .. "I"
+
+-------------------
+-- map jk to esc --
+-------------------
+vim.api.nvim_set_keymap('i', 'jk', '<Esc>', { noremap = true, silent = true })
 
 
 -- Bootstrap lazy.nvim
