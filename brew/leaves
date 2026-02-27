@@ -14,12 +14,14 @@ docker-compose
 duckdb
 dvc
 elixir
+exiftool
 eza
 fd
 ffmpeg
 fzf
 gemini-cli
 gh
+ghostscript
 git-crypt
 git-graph
 gitui
@@ -79,6 +81,7 @@ uv
 watch
 wget
 wireguard-tools
+xpdf
 yazi
 yq
 yt-dlp

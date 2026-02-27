@@ -40,14 +40,17 @@ coreutils
 cryptography
 curl
 dav1d
+dbus
 deno
 direnv
 docker-compose
+double-conversion
 duckdb
 dvc
 elixir
 erlang
 et
+exiftool
 eza
 faad2
 fd
@@ -67,6 +70,7 @@ gdk-pixbuf
 gemini-cli
 gettext
 gh
+ghostscript
 giflib
 git-crypt
 git-graph
@@ -95,6 +99,7 @@ imessage-exporter
 img2pdf
 ipfs
 isl
+jbig2dec
 jpeg-turbo
 jpeg-xl
 k9s
@@ -103,9 +108,12 @@ krb5
 kubernetes-cli
 kubo
 lame
+leptonica
+libarchive
 libass
 libassuan
 libavif
+libb2
 libbluray
 libbs2b
 libdatrie
@@ -116,6 +124,7 @@ libgcrypt
 libgit2
 libgpg-error
 libheif
+libidn
 libidn2
 libimagequant
 libksba
@@ -159,6 +168,7 @@ libyaml
 little-cms2
 llhttp
 llvm
+llvm@21
 lpeg
 lua
 luajit
@@ -168,6 +178,7 @@ lz4
 lzo
 m4
 mas
+md4c
 minikube
 mlx
 mlx-c
@@ -226,6 +237,8 @@ pygit2
 python@3.13
 python@3.14
 qpdf
+qtbase
+qtsvg
 rav1e
 rclone
 re2
@@ -250,6 +263,7 @@ sqlite
 svt-av1
 taglib
 telnet
+tesseract
 thrift
 tig
 tlrc
@@ -273,6 +287,7 @@ wxwidgets@3.2
 x264
 x265
 xorgproto
+xpdf
 xxhash
 xz
 yazi
@@ -288,6 +303,7 @@ alacritty
 anki
 audacity
 basictex
+brave-browser
 chromedriver
 corretto@11
 dbeaver-community
