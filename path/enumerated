@@ -104,7 +104,6 @@
 /opt/homebrew/bin/bd_splice
 /opt/homebrew/bin/benchmark_xl
 /opt/homebrew/bin/bisect-create
-/opt/homebrew/bin/bjoentegaard
 /opt/homebrew/bin/bomtool
 /opt/homebrew/bin/bq
 /opt/homebrew/bin/brew
@@ -126,6 +125,7 @@
 /opt/homebrew/bin/ccmake
 /opt/homebrew/bin/certbot
 /opt/homebrew/bin/chafa
+/opt/homebrew/bin/check_arm_indent.sh
 /opt/homebrew/bin/chroma
 /opt/homebrew/bin/chromedriver
 /opt/homebrew/bin/cjpeg
@@ -331,7 +331,6 @@
 /opt/homebrew/bin/gdu
 /opt/homebrew/bin/gecho
 /opt/homebrew/bin/gemini
-/opt/homebrew/bin/gen-enc-table
 /opt/homebrew/bin/gen-rc
 /opt/homebrew/bin/general_assembly.pl
 /opt/homebrew/bin/generate_lut_template
@@ -542,6 +541,7 @@
 /opt/homebrew/bin/img2pdf-gui
 /opt/homebrew/bin/img2webp
 /opt/homebrew/bin/import
+/opt/homebrew/bin/indent_arm_assembly.pl
 /opt/homebrew/bin/initdb
 /opt/homebrew/bin/initdb-17
 /opt/homebrew/bin/innochecksum
@@ -848,13 +848,13 @@
 /opt/homebrew/bin/probetest
 /opt/homebrew/bin/procan
 /opt/homebrew/bin/protoc
-/opt/homebrew/bin/protoc-34.0.0
+/opt/homebrew/bin/protoc-34.1.0
 /opt/homebrew/bin/protoc-gen-upb
-/opt/homebrew/bin/protoc-gen-upb-34.0.0
+/opt/homebrew/bin/protoc-gen-upb-34.1.0
 /opt/homebrew/bin/protoc-gen-upb_minitable
-/opt/homebrew/bin/protoc-gen-upb_minitable-34.0.0
+/opt/homebrew/bin/protoc-gen-upb_minitable-34.1.0
 /opt/homebrew/bin/protoc-gen-upbdefs
-/opt/homebrew/bin/protoc-gen-upbdefs-34.0.0
+/opt/homebrew/bin/protoc-gen-upbdefs-34.1.0
 /opt/homebrew/bin/prte
 /opt/homebrew/bin/prte-term
 /opt/homebrew/bin/prte_info
@@ -901,7 +901,6 @@
 /opt/homebrew/bin/rav1e
 /opt/homebrew/bin/raw2tiff
 /opt/homebrew/bin/rclone
-/opt/homebrew/bin/rd-curves
 /opt/homebrew/bin/rdjpgcom
 /opt/homebrew/bin/recode-sr-latin
 /opt/homebrew/bin/reindexdb
@@ -926,7 +925,6 @@
 /opt/homebrew/bin/rustc
 /opt/homebrew/bin/rustdoc
 /opt/homebrew/bin/rustfmt
-/opt/homebrew/bin/sbcl
 /opt/homebrew/bin/scale_slice_test
 /opt/homebrew/bin/sdl2-config
 /opt/homebrew/bin/seek_print
@@ -1067,7 +1065,6 @@
 /opt/homebrew/bin/yazi
 /opt/homebrew/bin/yq
 /opt/homebrew/bin/yt-dlp
-/opt/homebrew/bin/yuv-distortion
 /opt/homebrew/bin/z3
 /opt/homebrew/bin/zed
 /opt/homebrew/bin/zlib-flate
