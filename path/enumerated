@@ -582,7 +582,7 @@
 /opt/homebrew/bin/luac-5.5
 /opt/homebrew/bin/luac5.5
 /opt/homebrew/bin/luajit
-/opt/homebrew/bin/luajit-2.1.1772619647
+/opt/homebrew/bin/luajit-2.1.1774638290
 /opt/homebrew/bin/lynx
 /opt/homebrew/bin/lz4
 /opt/homebrew/bin/lz4c
@@ -1024,6 +1024,8 @@
 /opt/homebrew/bin/vlc
 /opt/homebrew/bin/vmaf
 /opt/homebrew/bin/vwebp
+/opt/homebrew/bin/wasmdeployqt
+/opt/homebrew/bin/wasmdeployqt6
 /opt/homebrew/bin/watch
 /opt/homebrew/bin/watchgnupg
 /opt/homebrew/bin/webpinfo
