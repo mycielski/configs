@@ -1221,6 +1221,7 @@
 /usr/bin/apropos
 /usr/bin/ar
 /usr/bin/arch
+/usr/bin/archiveutil
 /usr/bin/as
 /usr/bin/asa
 /usr/bin/assetutil
@@ -1234,6 +1235,7 @@
 /usr/bin/auval
 /usr/bin/auvaltool
 /usr/bin/avbanalyse
+/usr/bin/avbcapture
 /usr/bin/avbdiagnose
 /usr/bin/avbutil
 /usr/bin/avconvert
@@ -1303,7 +1305,6 @@
 /usr/bin/codesign
 /usr/bin/codesign_allocate
 /usr/bin/col
-/usr/bin/colldef
 /usr/bin/colrm
 /usr/bin/column
 /usr/bin/comm
@@ -1373,8 +1374,8 @@
 /usr/bin/demandoc
 /usr/bin/derq
 /usr/bin/desdp
+/usr/bin/devicectl
 /usr/bin/devmodectl
-/usr/bin/diagnose-fu
 /usr/bin/diff
 /usr/bin/diff3
 /usr/bin/diffstat
@@ -1487,6 +1488,9 @@
 /usr/bin/htmltree
 /usr/bin/htmltree5.34
 /usr/bin/ibtool
+/usr/bin/ibv_devices
+/usr/bin/ibv_devinfo
+/usr/bin/ibv_uc_pingpong
 /usr/bin/iconutil
 /usr/bin/iconv
 /usr/bin/ictool
@@ -1587,6 +1591,7 @@
 /usr/bin/leave
 /usr/bin/less
 /usr/bin/lessecho
+/usr/bin/lesskey
 /usr/bin/lex
 /usr/bin/libnetcfg
 /usr/bin/libnetcfg5.34
@@ -1649,6 +1654,7 @@
 /usr/bin/mdimport
 /usr/bin/mdls
 /usr/bin/mdutil
+/usr/bin/memacct
 /usr/bin/memory_pressure
 /usr/bin/mesg
 /usr/bin/mg
@@ -1657,7 +1663,6 @@
 /usr/bin/mig
 /usr/bin/mkbom
 /usr/bin/mkfifo
-/usr/bin/mklocale
 /usr/bin/mktemp
 /usr/bin/mnthome
 /usr/bin/modelcatalogdump
@@ -1802,6 +1807,7 @@
 /usr/bin/rails
 /usr/bin/rake
 /usr/bin/ranlib
+/usr/bin/rdma_ctl
 /usr/bin/rdoc
 /usr/bin/read
 /usr/bin/readlink
@@ -1837,6 +1843,7 @@
 /usr/bin/sdiff
 /usr/bin/sdp
 /usr/bin/sdx
+/usr/bin/searchdiagnose
 /usr/bin/security
 /usr/bin/sed
 /usr/bin/seeksize.d
@@ -1881,6 +1888,7 @@
 /usr/bin/snmpvacm
 /usr/bin/snmpwalk
 /usr/bin/sntp
+/usr/bin/soelim
 /usr/bin/sort
 /usr/bin/sourcekit-lsp
 /usr/bin/spfd
@@ -1899,6 +1907,7 @@
 /usr/bin/ssh-keyscan
 /usr/bin/stapler
 /usr/bin/stat
+/usr/bin/stdbuf
 /usr/bin/streamzip
 /usr/bin/streamzip5.34
 /usr/bin/stringdups
@@ -2143,6 +2152,7 @@
 /usr/sbin/automount
 /usr/sbin/avbdeviced
 /usr/sbin/bless
+/usr/sbin/bluetoothaudiod
 /usr/sbin/bluetoothd
 /usr/sbin/cfprefsd
 /usr/sbin/chat
