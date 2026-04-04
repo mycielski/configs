@@ -436,7 +436,6 @@
 /opt/homebrew/bin/gresource
 /opt/homebrew/bin/grm
 /opt/homebrew/bin/grmdir
-/opt/homebrew/bin/grpc_cli
 /opt/homebrew/bin/grpc_cpp_plugin
 /opt/homebrew/bin/grpc_csharp_plugin
 /opt/homebrew/bin/grpc_node_plugin
@@ -582,7 +581,7 @@
 /opt/homebrew/bin/luac-5.5
 /opt/homebrew/bin/luac5.5
 /opt/homebrew/bin/luajit
-/opt/homebrew/bin/luajit-2.1.1774638290
+/opt/homebrew/bin/luajit-2.1.1774896198
 /opt/homebrew/bin/lynx
 /opt/homebrew/bin/lz4
 /opt/homebrew/bin/lz4c
