@@ -513,6 +513,7 @@
 /opt/homebrew/bin/htm
 /opt/homebrew/bin/htmd
 /opt/homebrew/bin/htop
+/opt/homebrew/bin/huggingface-cli
 /opt/homebrew/bin/hwloc-annotate
 /opt/homebrew/bin/hwloc-bind
 /opt/homebrew/bin/hwloc-calc
