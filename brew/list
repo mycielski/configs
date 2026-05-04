@@ -90,7 +90,6 @@ hf
 highway
 htop
 huggingface-cli
-hwloc
 hyperfine
 icu4c@77
 icu4c@78
@@ -168,7 +167,6 @@ libyaml
 little-cms2
 llhttp
 llvm
-llvm@21
 lpeg
 lua
 luajit
@@ -179,6 +177,7 @@ lzo
 m4
 mas
 md4c
+merve
 minikube
 mlx
 mlx-c
@@ -188,6 +187,7 @@ mpdecimal
 mpfr
 mpg123
 mysql
+nbytes
 ncdu
 ncurses
 neovim
@@ -199,12 +199,12 @@ npth
 numpy
 ollama
 oniguruma
-open-mpi
 openblas
 openexr
 openjpeg
 openjph
 openssl@3
+openssl@4
 opentofu
 opus
 opusfile
@@ -220,7 +220,6 @@ pinentry
 pinentry-mac
 pixman
 pkgconf
-pmix
 pngquant
 podman
 podman-compose
@@ -251,10 +250,10 @@ rubberband
 rust
 sdl2
 serie
-shared-mime-info
 shellcheck
 shfmt
 simdjson
+simdutf
 snappy
 socat
 speex
