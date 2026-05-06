@@ -47,6 +47,7 @@ brew "qpdf"
 brew "img2pdf"
 brew "k9s"
 brew "kew"
+brew "kind"
 brew "kubernetes-cli"
 brew "kubo"
 brew "lynx"
@@ -145,7 +146,6 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Vimlike", id: 1584519802
 mas "Xcode", id: 497799835
-vscode "github.copilot-chat"
 vscode "ms-azuretools.vscode-containers"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
