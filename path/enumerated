@@ -549,6 +549,7 @@
 /opt/homebrew/bin/k9s
 /opt/homebrew/bin/kbxutil
 /opt/homebrew/bin/kew
+/opt/homebrew/bin/kind
 /opt/homebrew/bin/ksba-config
 /opt/homebrew/bin/kubectl
 /opt/homebrew/bin/lame
