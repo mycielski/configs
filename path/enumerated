@@ -169,7 +169,6 @@
 /opt/homebrew/bin/curve_keygen
 /opt/homebrew/bin/cwebp
 /opt/homebrew/bin/cws2fws
-/opt/homebrew/bin/danetool
 /opt/homebrew/bin/datacopy
 /opt/homebrew/bin/dav1d
 /opt/homebrew/bin/dawg2wordlist
@@ -263,6 +262,7 @@
 /opt/homebrew/bin/fc-cache
 /opt/homebrew/bin/fc-cat
 /opt/homebrew/bin/fc-conflist
+/opt/homebrew/bin/fc-genconf
 /opt/homebrew/bin/fc-list
 /opt/homebrew/bin/fc-match
 /opt/homebrew/bin/fc-pattern
@@ -573,7 +573,7 @@
 /opt/homebrew/bin/luac-5.5
 /opt/homebrew/bin/luac5.5
 /opt/homebrew/bin/luajit
-/opt/homebrew/bin/luajit-2.1.1774896198
+/opt/homebrew/bin/luajit-2.1.1780076327
 /opt/homebrew/bin/lynx
 /opt/homebrew/bin/lz4
 /opt/homebrew/bin/lz4c
@@ -818,13 +818,13 @@
 /opt/homebrew/bin/probetest
 /opt/homebrew/bin/procan
 /opt/homebrew/bin/protoc
-/opt/homebrew/bin/protoc-34.1.0
+/opt/homebrew/bin/protoc-35.0.0
 /opt/homebrew/bin/protoc-gen-upb
-/opt/homebrew/bin/protoc-gen-upb-34.1.0
+/opt/homebrew/bin/protoc-gen-upb-35.0.0
 /opt/homebrew/bin/protoc-gen-upb_minitable
-/opt/homebrew/bin/protoc-gen-upb_minitable-34.1.0
+/opt/homebrew/bin/protoc-gen-upb_minitable-35.0.0
 /opt/homebrew/bin/protoc-gen-upbdefs
-/opt/homebrew/bin/protoc-gen-upbdefs-34.1.0
+/opt/homebrew/bin/protoc-gen-upbdefs-35.0.0
 /opt/homebrew/bin/ps2ascii
 /opt/homebrew/bin/ps2epsi
 /opt/homebrew/bin/ps2pdf
