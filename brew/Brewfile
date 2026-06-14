@@ -225,6 +225,8 @@ cask "garmin-express"
 cask "gcloud-cli"
 # Free and open-source image editor
 cask "gimp"
+# Game client
+cask "gog-galaxy"
 # Web browser
 cask "google-chrome"
 # Virtual globe
