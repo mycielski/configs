@@ -1,141 +1,273 @@
-tap "iina/mpv-iina"
+tap "iina/mpv-iina", trusted: true
 tap "mistertea/et"
 tap "oven-sh/bun"
+# Protocol buffers (Google's data interchange format)
 brew "protobuf"
+# General-purpose data compression with high compression ratio
 brew "xz"
+# Automatically restart SSH sessions and tunnels
 brew "autossh"
+# Official Amazon AWS command-line interface
 brew "awscli"
+# Interpreted, interactive, object-oriented programming language
 brew "python@3.13"
+# Microsoft Azure CLI 2.0
 brew "azure-cli"
+# Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
+# Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
+# Vector graphics library with cross-device output support
 brew "cairo"
+# Tool to obtain certs from Let's Encrypt and autoenable HTTPS
 brew "certbot"
+# General purpose syntax highlighter in pure Go
 brew "chroma"
+# Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# OpenAI's coding agent that runs in your terminal
 brew "codex"
+# GNU File, Shell, and Text utilities
 brew "coreutils"
+# Load/unload environment variables based on $PWD
 brew "direnv"
+# Isolated development environments using Docker
 brew "docker-compose"
+# Embeddable SQL OLAP Database Management System
 brew "duckdb"
+# Optimized BLAS library
 brew "openblas"
+# Git for data science projects
 brew "dvc"
+# Functional metaprogramming aware language built on Erlang VM
 brew "elixir"
+# Perl lib for reading and writing EXIF metadata
 brew "exiftool"
+# Modern, maintained replacement for ls
 brew "eza"
+# Simple, fast and user-friendly alternative to find
 brew "fd"
+# Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
+# Command-line fuzzy finder written in Go
 brew "fzf"
+# Open-source, cross-platform JavaScript runtime environment
 brew "node"
+# Interact with Google Gemini AI models from the command-line
 brew "gemini-cli"
+# GitHub command-line tool
 brew "gh"
+# Interpreter for PostScript and PDF
 brew "ghostscript"
+# Enable transparent encryption/decryption of files in a git repo
 brew "git-crypt"
+# Command-line tool to show clear git graphs arranged for your branching model
 brew "git-graph"
+# Git extension for versioning large files
 brew "git-lfs"
+# Blazing fast terminal-ui for git written in rust
 brew "gitui"
+# GNU Privacy Guard (OpenPGP)
 brew "gnupg"
+# Go Language's command-line interface for database migrations
 brew "goose"
+# Kubernetes package manager
 brew "helm"
+# Client library for huggingface.co hub
 brew "hf"
+# Improved top (interactive process viewer)
 brew "htop"
+# Command-line benchmarking tool
 brew "hyperfine"
+# Tools and libraries to manipulate images in select formats
 brew "imagemagick"
+# Command-line tool to export and inspect local iMessage database
 brew "imessage-exporter"
+# Tools for and transforming and inspecting PDF files
 brew "qpdf"
+# Convert images to PDF via direct JPEG inclusion
 brew "img2pdf"
+# Kubernetes CLI To Manage Your Clusters In Style!
 brew "k9s"
+# Command-line music player
 brew "kew"
+# Run local Kubernetes cluster in Docker
 brew "kind"
+# Kubernetes command-line interface
 brew "kubernetes-cli"
+# Peer-to-peer hypermedia protocol
 brew "kubo"
+# Text-based web browser
 brew "lynx"
+# Mac App Store command-line interface
 brew "mas"
+# Run a Kubernetes cluster locally
 brew "minikube"
+# Deep clean and optimize your Mac
 brew "mole"
+# Remote terminal application
 brew "mosh"
+# Open source relational database management system
 brew "mysql"
+# NCurses Disk Usage
 brew "ncdu"
+# Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
 brew "nginx"
+# Port scanning utility for large networks
 brew "nmap"
+# Create, run, and share large language models (LLMs)
 brew "ollama"
+# Drop-in replacement for Terraform. Infrastructure as Code Tool
 brew "opentofu"
+# Tool for sending events from shell scripts & similar environments
 brew "otel-cli"
+# Swiss-army knife of markup format conversion
 brew "pandoc"
+# Shell command parallelization utility
 brew "parallel"
+# Data loading tool for PostgreSQL
 brew "pgloader"
+# Pinentry for GPG on Mac
 brew "pinentry-mac"
+# PNG image optimizing utility
 brew "pngquant"
+# Tool for managing OCI containers and pods
 brew "podman"
+# Alternative to docker-compose using podman
 brew "podman-compose"
+# Object-relational database system
 brew "postgresql@14"
+# Object-relational database system
 brew "postgresql@17"
+# Modern API client that lives in your terminal
 brew "posting"
+# Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 brew "prettier"
+# Monitor data's progress through a pipe
 brew "pv"
+# Rsync for cloud storage
 brew "rclone"
+# Perl-powered file rename script with many helpful built-ins
 brew "rename"
+# Utility that provides fast incremental file transfer
 brew "rsync"
+# Safe, concurrent, practical language
 brew "rust"
+# Rich git commit graph in your terminal
 brew "serie"
+# Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
+# Autoformat shell script source code
 brew "shfmt"
+# SOcket CAT: netcat on steroids
 brew "socat"
+# User interface to the TELNET protocol
 brew "telnet"
+# Text interface for Git repositories
 brew "tig"
+# Official tldr client written in Rust
 brew "tlrc"
+# Terminal multiplexer
 brew "tmux"
+# Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
+# Executes a program periodically, showing output fullscreen
 brew "watch"
+# Internet file retriever
 brew "wget"
+# Tools for the WireGuard secure network tunnel
 brew "wireguard-tools"
+# PDF viewer
 brew "xpdf"
+# Blazing fast terminal file manager written in Rust, based on async I/O
 brew "yazi"
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
+# Feature-rich command-line audio/video downloader
 brew "yt-dlp"
+# Shell extension to navigate your filesystem faster
 brew "zoxide"
-brew "mistertea/et/et"
-brew "oven-sh/bun/bun"
+# GPU-accelerated terminal emulator
 cask "alacritty"
+# Transfer files from and to an Android smartphone
 cask "android-file-transfer"
+# Memory training application
 cask "anki"
+# Multi-track audio editor and recorder
 cask "audacity"
+# Compact TeX distribution as alternative to the full TeX Live / MacTeX
 cask "basictex"
+# Web browser focusing on privacy
 cask "brave-browser"
+# Automated testing of webapps for Google Chrome
 cask "chromedriver"
+# Terminal-based AI coding assistant
 cask "claude-code"
+# OpenJDK distribution from Amazon
 cask "corretto@11"
+# Universal database tool and SQL client
 cask "dbeaver-community"
+# App to build and share containerised applications and microservices
 cask "docker-desktop"
+# Matrix collaboration client
 cask "element"
+# Web browser
 cask "firefox"
+# Update maps and software, sync with Garmin Connect and register your device
 cask "garmin-express"
+# Set of tools to manage resources and applications hosted on Google Cloud
 cask "gcloud-cli"
+# Free and open-source image editor
 cask "gimp"
+# Web browser
 cask "google-chrome"
+# Virtual globe
 cask "google-earth-pro"
+# JetBrains tools manager
 cask "jetbrains-toolbox"
+# Provides updates to various Microsoft products
 cask "microsoft-auto-update"
+# Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
+# VPN client
 cask "mullvad-vpn"
+# VPN client for secure internet access and private browsing
 cask "nordvpn"
+# Administration and development platform for PostgreSQL
 cask "pgadmin4"
+# Peer to peer Bitorrent client
 cask "qbittorrent"
+# Control your tools with a few keystrokes
 cask "raycast"
+# Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+# Instant messaging application focusing on security
 cask "signal"
+# Team communication and collaboration software
 cask "slack"
+# Music streaming service
 cask "spotify"
+# Video game digital distribution service
 cask "steam"
+# Mesh VPN based on WireGuard
 cask "tailscale-app"
+# Messaging app with a focus on speed and security
 cask "telegram"
+# Tool to invert scroll direction for physical scroll wheels
 cask "unnaturalscrollwheels"
+# Open-source code editor
 cask "visual-studio-code"
+# Multimedia player
 cask "vlc"
+# Native desktop client for WhatsApp
 cask "whatsapp"
+# Multiplayer code editor
 cask "zed"
 mas "AdGuard Mini", id: 1440147259
 mas "Goodnotes", id: 1444383602

@@ -56,8 +56,6 @@
 /opt/homebrew/bin/aarch64-apple-darwin24-gcc-nm-15
 /opt/homebrew/bin/aarch64-apple-darwin24-gcc-ranlib-15
 /opt/homebrew/bin/aarch64-apple-darwin24-gfortran-15
-/opt/homebrew/bin/aclocal
-/opt/homebrew/bin/aclocal-1.18
 /opt/homebrew/bin/adaparse
 /opt/homebrew/bin/adig
 /opt/homebrew/bin/ahost
@@ -76,16 +74,8 @@
 /opt/homebrew/bin/augparse
 /opt/homebrew/bin/augprint
 /opt/homebrew/bin/augtool
-/opt/homebrew/bin/autoconf
-/opt/homebrew/bin/autoheader
-/opt/homebrew/bin/autom4te
-/opt/homebrew/bin/automake
-/opt/homebrew/bin/automake-1.18
 /opt/homebrew/bin/autopoint
-/opt/homebrew/bin/autoreconf
-/opt/homebrew/bin/autoscan
 /opt/homebrew/bin/autossh
-/opt/homebrew/bin/autoupdate
 /opt/homebrew/bin/avifdec
 /opt/homebrew/bin/avifenc
 /opt/homebrew/bin/avifgainmaputil
@@ -122,7 +112,6 @@
 /opt/homebrew/bin/cargo
 /opt/homebrew/bin/cargo-clippy
 /opt/homebrew/bin/cargo-fmt
-/opt/homebrew/bin/ccmake
 /opt/homebrew/bin/certbot
 /opt/homebrew/bin/chafa
 /opt/homebrew/bin/check_arm_indent.sh
@@ -136,7 +125,6 @@
 /opt/homebrew/bin/clippy-driver
 /opt/homebrew/bin/clusterdb
 /opt/homebrew/bin/clusterdb-17
-/opt/homebrew/bin/cmake
 /opt/homebrew/bin/cntraining
 /opt/homebrew/bin/code
 /opt/homebrew/bin/code-tunnel
@@ -156,7 +144,6 @@
 /opt/homebrew/bin/convertsegfilestops
 /opt/homebrew/bin/converttopdf
 /opt/homebrew/bin/converttops
-/opt/homebrew/bin/cpack
 /opt/homebrew/bin/cpp-15
 /opt/homebrew/bin/crashpad_handler
 /opt/homebrew/bin/createdb
@@ -165,7 +152,6 @@
 /opt/homebrew/bin/createuser-17
 /opt/homebrew/bin/crypto_bench
 /opt/homebrew/bin/ct_run
-/opt/homebrew/bin/ctest
 /opt/homebrew/bin/curve_keygen
 /opt/homebrew/bin/cwebp
 /opt/homebrew/bin/cws2fws
@@ -526,7 +512,6 @@
 /opt/homebrew/bin/idn
 /opt/homebrew/bin/idn2
 /opt/homebrew/bin/iex
-/opt/homebrew/bin/ifnames
 /opt/homebrew/bin/imagetops
 /opt/homebrew/bin/imessage-exporter
 /opt/homebrew/bin/img2pdf
@@ -573,7 +558,7 @@
 /opt/homebrew/bin/luac-5.5
 /opt/homebrew/bin/luac5.5
 /opt/homebrew/bin/luajit
-/opt/homebrew/bin/luajit-2.1.1780076327
+/opt/homebrew/bin/luajit-2.1.1781341259
 /opt/homebrew/bin/lynx
 /opt/homebrew/bin/lz4
 /opt/homebrew/bin/lz4c
@@ -877,10 +862,6 @@
 /opt/homebrew/bin/rsvg-convert
 /opt/homebrew/bin/rsync
 /opt/homebrew/bin/rsync-ssl
-/opt/homebrew/bin/rtmpdump
-/opt/homebrew/bin/rtmpgw
-/opt/homebrew/bin/rtmpsrv
-/opt/homebrew/bin/rtmpsuck
 /opt/homebrew/bin/rubberband
 /opt/homebrew/bin/rubberband-r3
 /opt/homebrew/bin/run_erl

@@ -3,8 +3,6 @@ ada-url
 aom
 apache-arrow
 augeas
-autoconf
-automake
 autossh
 aws-c-auth
 aws-c-cal
@@ -34,11 +32,9 @@ certifi
 cffi
 chafa
 chroma
-cmake
 codex
 coreutils
 cryptography
-curl
 dav1d
 dbus
 deno
@@ -121,6 +117,7 @@ libdatrie
 libde265
 libdeflate
 libevent
+libffi
 libgcrypt
 libgit2
 libgpg-error
@@ -246,9 +243,9 @@ readline
 rename
 ripgrep
 rsync
-rtmpdump
 rubberband
 rust
+s2n
 sdl2
 serie
 shellcheck
