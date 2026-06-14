@@ -50,6 +50,7 @@ nmap
 ollama
 opentofu
 otel-cli
+oven-sh/bun/bun
 pandoc
 parallel
 pgloader

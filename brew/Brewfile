@@ -1,6 +1,6 @@
 tap "iina/mpv-iina", trusted: true
 tap "mistertea/et"
-tap "oven-sh/bun"
+tap "oven-sh/bun", trusted: true
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
 # General-purpose data compression with high compression ratio
@@ -193,6 +193,8 @@ brew "yq"
 brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
+# Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
+brew "oven-sh/bun/bun"
 # GPU-accelerated terminal emulator
 cask "alacritty"
 # Transfer files from and to an Android smartphone
