@@ -219,6 +219,8 @@ cask "dbeaver-community"
 cask "docker-desktop"
 # Matrix collaboration client
 cask "element"
+# Launcher for *Epic Games* games
+cask "epic-games"
 # Web browser
 cask "firefox"
 # Update maps and software, sync with Garmin Connect and register your device
@@ -241,6 +243,8 @@ cask "microsoft-teams"
 cask "mullvad-vpn"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
+# Cloud gaming platform
+cask "nvidia-geforce-now"
 # Administration and development platform for PostgreSQL
 cask "pgadmin4"
 # Peer to peer Bitorrent client

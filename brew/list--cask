@@ -10,6 +10,7 @@ corretto@11
 dbeaver-community
 docker-desktop
 element
+epic-games
 firefox
 garmin-express
 gcloud-cli
@@ -22,6 +23,7 @@ microsoft-auto-update
 microsoft-teams
 mullvad-vpn
 nordvpn
+nvidia-geforce-now
 pgadmin4
 qbittorrent
 raycast
