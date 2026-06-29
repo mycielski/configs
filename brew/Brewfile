@@ -1,5 +1,5 @@
 tap "iina/mpv-iina", trusted: true
-tap "mistertea/et"
+tap "mistertea/et", "https://github.com/MisterTea/homebrew-et", trusted: true
 tap "oven-sh/bun", trusted: true
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
@@ -193,6 +193,8 @@ brew "yq"
 brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
+# Remote terminal with IP roaming
+brew "mistertea/et/et"
 # Incredibly fast JavaScript runtime, bundler, transpiler and package manager - all in one.
 brew "oven-sh/bun/bun"
 # GPU-accelerated terminal emulator
