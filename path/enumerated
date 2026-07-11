@@ -56,6 +56,8 @@
 /opt/homebrew/bin/aarch64-apple-darwin25-gcc-nm-16
 /opt/homebrew/bin/aarch64-apple-darwin25-gcc-ranlib-16
 /opt/homebrew/bin/aarch64-apple-darwin25-gfortran-16
+/opt/homebrew/bin/aclocal
+/opt/homebrew/bin/aclocal-1.18
 /opt/homebrew/bin/adaparse
 /opt/homebrew/bin/adig
 /opt/homebrew/bin/ahost
@@ -74,8 +76,16 @@
 /opt/homebrew/bin/augparse
 /opt/homebrew/bin/augprint
 /opt/homebrew/bin/augtool
+/opt/homebrew/bin/autoconf
+/opt/homebrew/bin/autoheader
+/opt/homebrew/bin/autom4te
+/opt/homebrew/bin/automake
+/opt/homebrew/bin/automake-1.18
 /opt/homebrew/bin/autopoint
+/opt/homebrew/bin/autoreconf
+/opt/homebrew/bin/autoscan
 /opt/homebrew/bin/autossh
+/opt/homebrew/bin/autoupdate
 /opt/homebrew/bin/avifdec
 /opt/homebrew/bin/avifenc
 /opt/homebrew/bin/avifgainmaputil
@@ -109,10 +119,20 @@
 /opt/homebrew/bin/c++-16
 /opt/homebrew/bin/c_rehash
 /opt/homebrew/bin/cairo-trace
+/opt/homebrew/bin/calibre
+/opt/homebrew/bin/calibre-complete
+/opt/homebrew/bin/calibre-customize
+/opt/homebrew/bin/calibre-debug
+/opt/homebrew/bin/calibre-parallel
+/opt/homebrew/bin/calibre-server
+/opt/homebrew/bin/calibre-smtp
+/opt/homebrew/bin/calibredb
 /opt/homebrew/bin/cargo
 /opt/homebrew/bin/cargo-clippy
 /opt/homebrew/bin/cargo-fmt
+/opt/homebrew/bin/ccmake
 /opt/homebrew/bin/certbot
+/opt/homebrew/bin/cffi-gen-src
 /opt/homebrew/bin/chafa
 /opt/homebrew/bin/check_arm_indent.sh
 /opt/homebrew/bin/chroma
@@ -125,6 +145,7 @@
 /opt/homebrew/bin/clippy-driver
 /opt/homebrew/bin/clusterdb
 /opt/homebrew/bin/clusterdb-17
+/opt/homebrew/bin/cmake
 /opt/homebrew/bin/cntraining
 /opt/homebrew/bin/code
 /opt/homebrew/bin/code-tunnel
@@ -144,6 +165,7 @@
 /opt/homebrew/bin/convertsegfilestops
 /opt/homebrew/bin/converttopdf
 /opt/homebrew/bin/converttops
+/opt/homebrew/bin/cpack
 /opt/homebrew/bin/cpp-16
 /opt/homebrew/bin/crashpad_handler
 /opt/homebrew/bin/createdb
@@ -152,6 +174,7 @@
 /opt/homebrew/bin/createuser-17
 /opt/homebrew/bin/crypto_bench
 /opt/homebrew/bin/ct_run
+/opt/homebrew/bin/ctest
 /opt/homebrew/bin/curve_keygen
 /opt/homebrew/bin/cwebp
 /opt/homebrew/bin/cws2fws
@@ -195,6 +218,12 @@
 /opt/homebrew/bin/dvipdf
 /opt/homebrew/bin/dwebp
 /opt/homebrew/bin/dx
+/opt/homebrew/bin/ebook-convert
+/opt/homebrew/bin/ebook-device
+/opt/homebrew/bin/ebook-edit
+/opt/homebrew/bin/ebook-meta
+/opt/homebrew/bin/ebook-polish
+/opt/homebrew/bin/ebook-viewer
 /opt/homebrew/bin/ecpg
 /opt/homebrew/bin/ecpg-17
 /opt/homebrew/bin/elixir
@@ -256,6 +285,7 @@
 /opt/homebrew/bin/fc-scan
 /opt/homebrew/bin/fc-validate
 /opt/homebrew/bin/fd
+/opt/homebrew/bin/fetch-ebook-metadata
 /opt/homebrew/bin/ffescape
 /opt/homebrew/bin/ffeval
 /opt/homebrew/bin/ffhash
@@ -512,6 +542,7 @@
 /opt/homebrew/bin/idn
 /opt/homebrew/bin/idn2
 /opt/homebrew/bin/iex
+/opt/homebrew/bin/ifnames
 /opt/homebrew/bin/imagetops
 /opt/homebrew/bin/imessage-exporter
 /opt/homebrew/bin/img2pdf
@@ -531,6 +562,7 @@
 /opt/homebrew/bin/jpgicc
 /opt/homebrew/bin/jxl_from_tree
 /opt/homebrew/bin/jxlinfo
+/opt/homebrew/bin/jxltran
 /opt/homebrew/bin/k9s
 /opt/homebrew/bin/kbxutil
 /opt/homebrew/bin/kew
@@ -548,6 +580,9 @@
 /opt/homebrew/bin/local_tone_map
 /opt/homebrew/bin/loudnorm.rb
 /opt/homebrew/bin/lprsetup.sh
+/opt/homebrew/bin/lrf2lrs
+/opt/homebrew/bin/lrfviewer
+/opt/homebrew/bin/lrs2lrf
 /opt/homebrew/bin/lstmeval
 /opt/homebrew/bin/lstmtraining
 /opt/homebrew/bin/lto-dump-16
@@ -558,7 +593,7 @@
 /opt/homebrew/bin/luac-5.5
 /opt/homebrew/bin/luac5.5
 /opt/homebrew/bin/luajit
-/opt/homebrew/bin/luajit-2.1.1782726002
+/opt/homebrew/bin/luajit-2.1.1783672735
 /opt/homebrew/bin/lynx
 /opt/homebrew/bin/lz4
 /opt/homebrew/bin/lz4c
@@ -579,6 +614,7 @@
 /opt/homebrew/bin/magick
 /opt/homebrew/bin/magick-script
 /opt/homebrew/bin/make_chlayout_test
+/opt/homebrew/bin/markdown-calibre
 /opt/homebrew/bin/mas
 /opt/homebrew/bin/md2html
 /opt/homebrew/bin/merge-all-source-plugins
@@ -821,6 +857,8 @@
 /opt/homebrew/bin/ps2ps2
 /opt/homebrew/bin/psicc
 /opt/homebrew/bin/psktool
+/opt/homebrew/bin/psl
+/opt/homebrew/bin/psl-make-dafsa
 /opt/homebrew/bin/psql
 /opt/homebrew/bin/psql-17
 /opt/homebrew/bin/ptx
@@ -974,6 +1012,7 @@
 /opt/homebrew/bin/wasmdeployqt6
 /opt/homebrew/bin/watch
 /opt/homebrew/bin/watchgnupg
+/opt/homebrew/bin/web2disk
 /opt/homebrew/bin/webpinfo
 /opt/homebrew/bin/webpmux
 /opt/homebrew/bin/wg
