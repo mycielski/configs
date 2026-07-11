@@ -3,6 +3,8 @@ ada-url
 aom
 apache-arrow
 augeas
+autoconf
+automake
 autossh
 aws-c-auth
 aws-c-cal
@@ -32,9 +34,11 @@ certifi
 cffi
 chafa
 chroma
+cmake
 codex
 coreutils
 cryptography
+curl
 dav1d
 dbus
 deno
@@ -98,6 +102,7 @@ isl
 jbig2dec
 jpeg-turbo
 jpeg-xl
+json-c
 k9s
 kew
 kind
@@ -134,6 +139,7 @@ libngtcp2
 libogg
 libomp
 libpng
+libpsl
 libraqm
 librsvg
 libsamplerate
@@ -301,6 +307,7 @@ anki
 audacity
 basictex
 brave-browser
+calibre
 chromedriver
 claude-code
 corretto@11

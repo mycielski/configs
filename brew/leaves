@@ -1,3 +1,4 @@
+automake
 autossh
 awscli
 azure-cli
@@ -5,6 +6,7 @@ bat
 btop
 certbot
 chroma
+cmake
 codex
 coreutils
 direnv
@@ -63,6 +65,7 @@ postgresql@17
 posting
 prettier
 pv
+python@3.13
 rclone
 rename
 rsync
