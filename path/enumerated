@@ -133,7 +133,6 @@
 /opt/homebrew/bin/ccmake
 /opt/homebrew/bin/certbot
 /opt/homebrew/bin/cffi-gen-src
-/opt/homebrew/bin/chafa
 /opt/homebrew/bin/check_arm_indent.sh
 /opt/homebrew/bin/chroma
 /opt/homebrew/bin/chromedriver
@@ -267,7 +266,6 @@
 /opt/homebrew/bin/exrstdattr
 /opt/homebrew/bin/eza
 /opt/homebrew/bin/f2py
-/opt/homebrew/bin/faad
 /opt/homebrew/bin/factor
 /opt/homebrew/bin/fadot
 /opt/homebrew/bin/fastbase64
@@ -292,10 +290,6 @@
 /opt/homebrew/bin/ffmpeg
 /opt/homebrew/bin/ffplay
 /opt/homebrew/bin/ffprobe
-/opt/homebrew/bin/fftw-wisdom
-/opt/homebrew/bin/fftw-wisdom-to-conf
-/opt/homebrew/bin/fftwf-wisdom
-/opt/homebrew/bin/fftwl-wisdom
 /opt/homebrew/bin/filan
 /opt/homebrew/bin/fileinfo
 /opt/homebrew/bin/firefox
@@ -342,10 +336,6 @@
 /opt/homebrew/bin/gdir
 /opt/homebrew/bin/gdircolors
 /opt/homebrew/bin/gdirname
-/opt/homebrew/bin/gdk-pixbuf-csource
-/opt/homebrew/bin/gdk-pixbuf-pixdata
-/opt/homebrew/bin/gdk-pixbuf-query-loaders
-/opt/homebrew/bin/gdk-pixbuf-thumbnailer
 /opt/homebrew/bin/gdu
 /opt/homebrew/bin/gecho
 /opt/homebrew/bin/gemini
@@ -566,7 +556,6 @@
 /opt/homebrew/bin/jxltran
 /opt/homebrew/bin/k9s
 /opt/homebrew/bin/kbxutil
-/opt/homebrew/bin/kew
 /opt/homebrew/bin/kind
 /opt/homebrew/bin/ksba-config
 /opt/homebrew/bin/kubectl
@@ -594,7 +583,7 @@
 /opt/homebrew/bin/luac-5.5
 /opt/homebrew/bin/luac5.5
 /opt/homebrew/bin/luajit
-/opt/homebrew/bin/luajit-2.1.1785005726
+/opt/homebrew/bin/luajit-2.1.1785192264
 /opt/homebrew/bin/lynx
 /opt/homebrew/bin/lz4
 /opt/homebrew/bin/lz4c
@@ -654,6 +643,8 @@
 /opt/homebrew/bin/msgunfmt
 /opt/homebrew/bin/msguniq
 /opt/homebrew/bin/murge
+/opt/homebrew/bin/musikcube
+/opt/homebrew/bin/musikcubed
 /opt/homebrew/bin/my_print_defaults
 /opt/homebrew/bin/myisam_ftdump
 /opt/homebrew/bin/myisamchk
@@ -717,6 +708,7 @@
 /opt/homebrew/bin/ojph_expand
 /opt/homebrew/bin/ollama
 /opt/homebrew/bin/onig-config
+/opt/homebrew/bin/openmpt123
 /opt/homebrew/bin/openssl
 /opt/homebrew/bin/opj_compress
 /opt/homebrew/bin/opj_decompress
@@ -899,7 +891,6 @@
 /opt/homebrew/bin/rg
 /opt/homebrew/bin/rrsync
 /opt/homebrew/bin/rscreen
-/opt/homebrew/bin/rsvg-convert
 /opt/homebrew/bin/rsync
 /opt/homebrew/bin/rsync-ssl
 /opt/homebrew/bin/rubberband
