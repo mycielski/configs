@@ -89,8 +89,6 @@ brew "qpdf"
 brew "img2pdf"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "k9s"
-# Command-line music player
-brew "kew"
 # Run local Kubernetes cluster in Docker
 brew "kind"
 # Kubernetes command-line interface
@@ -107,6 +105,8 @@ brew "minikube"
 brew "mole"
 # Remote terminal application
 brew "mosh"
+# Terminal-based audio engine, library, player and server
+brew "musikcube"
 # Open source relational database management system
 brew "mysql"
 # NCurses Disk Usage

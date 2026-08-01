@@ -17,7 +17,6 @@ elixir
 exiftool
 eza
 fd
-ffmpeg
 fzf
 gemini-cli
 gh
@@ -36,7 +35,6 @@ imagemagick
 imessage-exporter
 img2pdf
 k9s
-kew
 kind
 kubo
 lynx
@@ -45,6 +43,7 @@ minikube
 mistertea/et/et
 mole
 mosh
+musikcube
 mysql
 ncdu
 neovim

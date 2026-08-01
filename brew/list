@@ -32,7 +32,6 @@ cairo
 certbot
 certifi
 cffi
-chafa
 chroma
 cmake
 codex
@@ -52,11 +51,9 @@ erlang
 et
 exiftool
 eza
-faad2
 fd
 ffmpeg
 ffmpeg-iina
-fftw
 flac
 fmt
 fontconfig
@@ -65,8 +62,8 @@ freetype
 frei0r
 fribidi
 fzf
+game-music-emu
 gcc
-gdk-pixbuf
 gemini-cli
 gettext
 gh
@@ -104,7 +101,6 @@ jpeg-turbo
 jpeg-xl
 json-c
 k9s
-kew
 kind
 krb5
 kubernetes-cli
@@ -121,6 +117,7 @@ libbs2b
 libdatrie
 libde265
 libdeflate
+libev
 libevent
 libffi
 libgcrypt
@@ -132,16 +129,17 @@ libidn2
 libimagequant
 libksba
 liblinear
+libmicrohttpd
 libmpc
 libnghttp2
 libnghttp3
 libngtcp2
 libogg
 libomp
+libopenmpt
 libpng
 libpsl
 libraqm
-librsvg
 libsamplerate
 libsndfile
 libsodium
@@ -190,6 +188,7 @@ mosh
 mpdecimal
 mpfr
 mpg123
+musikcube
 mysql
 nbytes
 ncdu
@@ -211,7 +210,6 @@ openssl@3
 openssl@4
 opentofu
 opus
-opusfile
 otel-cli
 p11-kit
 pandoc
@@ -228,6 +226,7 @@ pngquant
 podman
 podman-compose
 popt
+portaudio
 postgresql@14
 postgresql@17
 posting
