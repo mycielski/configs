@@ -279,7 +279,6 @@ cask "vlc"
 cask "whatsapp"
 # Multiplayer code editor
 cask "zed"
-mas "AdGuard Mini", id: 1440147259
 mas "Goodnotes", id: 1444383602
 mas "Hush", id: 1544743900
 mas "Keynote", id: 409183694
