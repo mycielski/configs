@@ -97,6 +97,7 @@ img2pdf
 ipfs
 isl
 jbig2dec
+jemalloc
 jpeg-turbo
 jpeg-xl
 json-c
@@ -168,7 +169,7 @@ libxrender
 libyaml
 little-cms2
 llhttp
-llvm
+llvm@22
 lpeg
 lua
 luajit
@@ -294,7 +295,6 @@ xz
 yazi
 yq
 yt-dlp
-z3
 zeromq
 zimg
 zlib-ng-compat
