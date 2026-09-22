@@ -46,7 +46,7 @@
 /opt/homebrew/bin/aarch64-apple-darwin25-gcc-ranlib-16
 /opt/homebrew/bin/aarch64-apple-darwin25-gfortran-16
 /opt/homebrew/bin/aclocal
-/opt/homebrew/bin/aclocal-1.18
+/opt/homebrew/bin/aclocal-1.19
 /opt/homebrew/bin/adaparse
 /opt/homebrew/bin/adig
 /opt/homebrew/bin/ahost
@@ -69,7 +69,7 @@
 /opt/homebrew/bin/autoheader
 /opt/homebrew/bin/autom4te
 /opt/homebrew/bin/automake
-/opt/homebrew/bin/automake-1.18
+/opt/homebrew/bin/automake-1.19
 /opt/homebrew/bin/autopoint
 /opt/homebrew/bin/autoreconf
 /opt/homebrew/bin/autoscan
@@ -829,13 +829,13 @@
 /opt/homebrew/bin/probetest
 /opt/homebrew/bin/procan
 /opt/homebrew/bin/protoc
-/opt/homebrew/bin/protoc-36.1.0
+/opt/homebrew/bin/protoc-36.2.0
 /opt/homebrew/bin/protoc-gen-upb
 /opt/homebrew/bin/protoc-gen-upb_minitable
-/opt/homebrew/bin/protoc-gen-upb_minitable-36.1.0
-/opt/homebrew/bin/protoc-gen-upb-36.1.0
+/opt/homebrew/bin/protoc-gen-upb_minitable-36.2.0
+/opt/homebrew/bin/protoc-gen-upb-36.2.0
 /opt/homebrew/bin/protoc-gen-upbdefs
-/opt/homebrew/bin/protoc-gen-upbdefs-36.1.0
+/opt/homebrew/bin/protoc-gen-upbdefs-36.2.0
 /opt/homebrew/bin/ps2ascii
 /opt/homebrew/bin/ps2epsi
 /opt/homebrew/bin/ps2pdf
