@@ -169,6 +169,7 @@ libxrender
 libyaml
 little-cms2
 llhttp
+llvm
 llvm@22
 lpeg
 lua
@@ -295,6 +296,7 @@ xz
 yazi
 yq
 yt-dlp
+z3
 zeromq
 zimg
 zlib-ng-compat
@@ -332,7 +334,6 @@ qbittorrent
 raycast
 rectangle
 signal
-slack
 spotify
 steam
 tailscale

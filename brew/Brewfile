@@ -259,8 +259,6 @@ cask "raycast"
 cask "rectangle"
 # Instant messaging application focusing on security
 cask "signal"
-# Team communication and collaboration software
-cask "slack"
 # Music streaming service
 cask "spotify"
 # Video game digital distribution service

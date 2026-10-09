@@ -117,7 +117,6 @@
 /opt/homebrew/bin/bunx
 /opt/homebrew/bin/butteraugli_main
 /opt/homebrew/bin/c++-16
-/opt/homebrew/bin/c_rehash
 /opt/homebrew/bin/cairo-trace
 /opt/homebrew/bin/calibre
 /opt/homebrew/bin/calibre-complete
@@ -523,7 +522,6 @@
 /opt/homebrew/bin/htm
 /opt/homebrew/bin/htmd
 /opt/homebrew/bin/htop
-/opt/homebrew/bin/huggingface-cli
 /opt/homebrew/bin/hyperfine
 /opt/homebrew/bin/ibd2sdi
 /opt/homebrew/bin/icc_simplify
@@ -876,6 +874,7 @@
 /opt/homebrew/bin/qmake
 /opt/homebrew/bin/qmake6
 /opt/homebrew/bin/qpdf
+/opt/homebrew/bin/qprofdiff
 /opt/homebrew/bin/qt-cmake
 /opt/homebrew/bin/qt-cmake-create
 /opt/homebrew/bin/qt-configure-module
@@ -1050,6 +1049,7 @@
 /opt/homebrew/bin/yazi
 /opt/homebrew/bin/yq
 /opt/homebrew/bin/yt-dlp
+/opt/homebrew/bin/z3
 /opt/homebrew/bin/zed
 /opt/homebrew/bin/zlib-flate
 /opt/homebrew/bin/zmqshell.py
