@@ -221,6 +221,12 @@ upgrade() {
 	echo "$0 >> Updating lazy nvim"
 	nvim --headless "+Lazy! sync" +qa || job_status=$(($job_status + 100))
 
+	echo "$0 >> mole cleanup"
+	mo clean || job_status=$(($job_status + 200))
+
+	echo "$0 >> mole optimize"
+	mo optimize || job_status=$(($job_status + 400))
+
 	echo "$0 >> All done!"
 
 	return $job_status
