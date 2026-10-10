@@ -526,7 +526,6 @@
 /opt/homebrew/bin/ibd2sdi
 /opt/homebrew/bin/icc_simplify
 /opt/homebrew/bin/identify
-/opt/homebrew/bin/idle3
 /opt/homebrew/bin/idle3.13
 /opt/homebrew/bin/idle3.14
 /opt/homebrew/bin/idn
@@ -804,7 +803,6 @@
 /opt/homebrew/bin/pinentry-mac
 /opt/homebrew/bin/pinentry-tty
 /opt/homebrew/bin/pinky
-/opt/homebrew/bin/pip3
 /opt/homebrew/bin/pip3.13
 /opt/homebrew/bin/pip3.14
 /opt/homebrew/bin/pkcs1-conv
@@ -859,11 +857,8 @@
 /opt/homebrew/bin/psql-17
 /opt/homebrew/bin/ptx
 /opt/homebrew/bin/pv
-/opt/homebrew/bin/pydoc3
 /opt/homebrew/bin/pydoc3.13
 /opt/homebrew/bin/pydoc3.14
-/opt/homebrew/bin/python3
-/opt/homebrew/bin/python3-config
 /opt/homebrew/bin/python3.13
 /opt/homebrew/bin/python3.13-config
 /opt/homebrew/bin/python3.14
@@ -1015,7 +1010,6 @@
 /opt/homebrew/bin/wg
 /opt/homebrew/bin/wg-quick
 /opt/homebrew/bin/wget
-/opt/homebrew/bin/wheel3
 /opt/homebrew/bin/wheel3.13
 /opt/homebrew/bin/wheel3.14
 /opt/homebrew/bin/wireguard-go
