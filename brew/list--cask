@@ -3,7 +3,6 @@ android-file-transfer
 anki
 audacity
 basictex
-brave-browser
 calibre
 chromedriver
 claude-code
@@ -19,12 +18,10 @@ gimp
 google-chrome
 google-cloud-sdk
 google-earth-pro
-jetbrains-toolbox
 microsoft-auto-update
 microsoft-teams
 mullvad-vpn
 nordvpn
-nvidia-geforce-now
 pgadmin4
 qbittorrent
 raycast
@@ -32,11 +29,8 @@ rectangle
 signal
 spotify
 steam
-tailscale
-tailscale-app
 telegram
 unnaturalscrollwheels
 visual-studio-code
 vlc
 whatsapp
-zed

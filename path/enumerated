@@ -5,7 +5,6 @@
 /Users/tmyciels/.codeium/windsurf/bin/surf
 /Users/tmyciels/.codeium/windsurf/bin/windsurf
 /Users/tmyciels/.local/bin
-/Users/tmyciels/Library/Application Support/JetBrains/Toolbox/scripts
 /bin
 /bin/[
 /bin/bash
@@ -941,7 +940,6 @@
 /opt/homebrew/bin/sutf-benchmark
 /opt/homebrew/bin/tac
 /opt/homebrew/bin/taglib-config
-/opt/homebrew/bin/tailscale
 /opt/homebrew/bin/target_dec_fate.sh
 /opt/homebrew/bin/tdspool
 /opt/homebrew/bin/telnet
@@ -1044,7 +1042,6 @@
 /opt/homebrew/bin/yq
 /opt/homebrew/bin/yt-dlp
 /opt/homebrew/bin/z3
-/opt/homebrew/bin/zed
 /opt/homebrew/bin/zlib-flate
 /opt/homebrew/bin/zmqshell.py
 /opt/homebrew/bin/zoxide
