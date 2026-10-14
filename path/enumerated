@@ -503,6 +503,9 @@
 /opt/homebrew/bin/gxps
 /opt/homebrew/bin/gxpsc
 /opt/homebrew/bin/gyes
+/opt/homebrew/bin/harmonydeployqt
+/opt/homebrew/bin/harmonydeployqt6
+/opt/homebrew/bin/harmonyostestrunner
 /opt/homebrew/bin/hb-info
 /opt/homebrew/bin/hb-raster
 /opt/homebrew/bin/hb-shape
@@ -525,8 +528,10 @@
 /opt/homebrew/bin/ibd2sdi
 /opt/homebrew/bin/icc_simplify
 /opt/homebrew/bin/identify
+/opt/homebrew/bin/idle3
 /opt/homebrew/bin/idle3.13
 /opt/homebrew/bin/idle3.14
+/opt/homebrew/bin/idle3.15
 /opt/homebrew/bin/idn
 /opt/homebrew/bin/idn2
 /opt/homebrew/bin/iex
@@ -583,7 +588,7 @@
 /opt/homebrew/bin/luac-5.5
 /opt/homebrew/bin/luac5.5
 /opt/homebrew/bin/luajit
-/opt/homebrew/bin/luajit-2.1.1788856981
+/opt/homebrew/bin/luajit-2.1.1791890110
 /opt/homebrew/bin/lynx
 /opt/homebrew/bin/lz4
 /opt/homebrew/bin/lz4c
@@ -802,8 +807,10 @@
 /opt/homebrew/bin/pinentry-mac
 /opt/homebrew/bin/pinentry-tty
 /opt/homebrew/bin/pinky
+/opt/homebrew/bin/pip3
 /opt/homebrew/bin/pip3.13
 /opt/homebrew/bin/pip3.14
+/opt/homebrew/bin/pip3.15
 /opt/homebrew/bin/pkcs1-conv
 /opt/homebrew/bin/pkg-config
 /opt/homebrew/bin/pkgconf
@@ -856,12 +863,18 @@
 /opt/homebrew/bin/psql-17
 /opt/homebrew/bin/ptx
 /opt/homebrew/bin/pv
+/opt/homebrew/bin/pydoc3
 /opt/homebrew/bin/pydoc3.13
 /opt/homebrew/bin/pydoc3.14
+/opt/homebrew/bin/pydoc3.15
+/opt/homebrew/bin/python3
+/opt/homebrew/bin/python3-config
 /opt/homebrew/bin/python3.13
 /opt/homebrew/bin/python3.13-config
 /opt/homebrew/bin/python3.14
 /opt/homebrew/bin/python3.14-config
+/opt/homebrew/bin/python3.15
+/opt/homebrew/bin/python3.15-config
 /opt/homebrew/bin/pzstd
 /opt/homebrew/bin/qdbuscpp2xml
 /opt/homebrew/bin/qdbusxml2cpp
@@ -988,6 +1001,7 @@
 /opt/homebrew/bin/unxz
 /opt/homebrew/bin/unzstd
 /opt/homebrew/bin/update-checkasm.sh
+/opt/homebrew/bin/uriparse
 /opt/homebrew/bin/uv
 /opt/homebrew/bin/uvx
 /opt/homebrew/bin/vacuumdb
