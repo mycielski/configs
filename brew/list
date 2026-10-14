@@ -170,7 +170,6 @@ libyaml
 little-cms2
 llhttp
 llvm
-llvm@22
 lpeg
 lua
 luajit
@@ -240,6 +239,7 @@ pydantic
 pygit2
 python@3.13
 python@3.14
+python@3.15
 qpdf
 qtbase
 qtsvg
@@ -277,6 +277,7 @@ tree-sitter
 unbound
 unibilium
 unixodbc
+uriparser
 utf8cpp
 utf8proc
 uv
