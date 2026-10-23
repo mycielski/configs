@@ -138,8 +138,6 @@ brew "podman"
 # Alternative to docker-compose using podman
 brew "podman-compose"
 # Object-relational database system
-brew "postgresql@14"
-# Object-relational database system
 brew "postgresql@17"
 # Modern API client that lives in your terminal
 brew "posting"

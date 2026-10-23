@@ -228,7 +228,6 @@ podman
 podman-compose
 popt
 portaudio
-postgresql@14
 postgresql@17
 posting
 prettier

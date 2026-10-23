@@ -59,12 +59,10 @@ pgloader
 pinentry-mac
 pngquant
 podman-compose
-postgresql@14
 postgresql@17
 posting
 prettier
 pv
-python@3.13
 rclone
 rename
 rsync
