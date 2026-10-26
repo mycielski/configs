@@ -51,10 +51,6 @@ brew "fd"
 brew "ffmpeg"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# Open-source, cross-platform JavaScript runtime environment
-brew "node"
-# Interact with Google Gemini AI models from the command-line
-brew "gemini-cli"
 # GitHub command-line tool
 brew "gh"
 # Interpreter for PostScript and PDF
@@ -117,6 +113,8 @@ brew "neovim"
 brew "nginx"
 # Port scanning utility for large networks
 brew "nmap"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
 # Create, run, and share large language models (LLMs)
 brew "ollama"
 # Drop-in replacement for Terraform. Infrastructure as Code Tool
