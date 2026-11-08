@@ -29,7 +29,6 @@ helm
 hf
 htop
 hyperfine
-iina/mpv-iina/ffmpeg-iina
 imagemagick
 imessage-exporter
 img2pdf
@@ -62,6 +61,7 @@ postgresql@17
 posting
 prettier
 pv
+python@3.13
 rclone
 rename
 rsync

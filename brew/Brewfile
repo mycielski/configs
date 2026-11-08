@@ -241,6 +241,8 @@ cask "mullvad-vpn"
 cask "nordvpn"
 # Administration and development platform for PostgreSQL
 cask "pgadmin4"
+# Stenotype engine
+cask "plover"
 # Peer to peer Bitorrent client
 cask "qbittorrent"
 # Control your tools with a few keystrokes
