@@ -1,3 +1,4 @@
+tap "crmne/tap"
 tap "iina/mpv-iina", trusted: true
 tap "mistertea/et", "https://github.com/MisterTea/homebrew-et", trusted: true
 tap "oven-sh/bun", trusted: true
@@ -251,6 +252,8 @@ cask "raycast"
 cask "rectangle"
 # Instant messaging application focusing on security
 cask "signal"
+# Native Spotify client
+cask "crmne/tap/spotifast", trusted: true
 # Music streaming service
 cask "spotify"
 # Video game digital distribution service
